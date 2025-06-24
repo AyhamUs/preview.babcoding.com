@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Website Previews | Bab Coding Group</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+  
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+      min-height: 100vh;
+    }
+    
+    .card-shadow {
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    }
+    
+    .preview-card {
+      transition: all 0.3s ease;
+      border: 2px solid transparent;
+    }
+    
+    .preview-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      border-color: #3b82f6;
+    }
+    
+    .fade-in {
+      animation: fadeIn 0.8s ease-in-out;
+    }
+    
+    .slide-up {
+      animation: slideUp 0.6s ease-out;
+    }
+    
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    
+    @keyframes slideUp {
+      from { transform: translateY(30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    
+    .gradient-text {
+      background: linear-gradient(135deg, #2563eb, #10b981, #3b82f6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      background-size: 200% 200%;
+      animation: gradientShift 4s ease-in-out infinite;
+    }
+    
+    @keyframes gradientShift {
+      0%, 100% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+    }
+    
+    .status-badge {
+      font-size: 0.75rem;
+      padding: 0.25rem 0.75rem;
+      border-radius: 9999px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    
+    .status-ready {
+      background-color: #dcfce7;
+      color: #166534;
+    }
+    
+    .status-review {
+      background-color: #fef3c7;
+      color: #92400e;
+    }
+    
+    .status-development {
+      background-color: #dbeafe;
+      color: #1e40af;
+    }
+    
+    .nav-link {
+      transition: all 0.3s ease;
+    }
+    
+    .nav-link:hover {
+      color: #2563eb;
+      transform: translateY(-2px);
+    }
+    
+    @media (max-width: 768px) {
+      .mobile-padding {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+      
+      .mobile-text {
+        font-size: 1rem;
+        line-height: 1.6;
+      }
+      
+      .preview-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body class="text-gray-800">
+
+  <!-- NAVIGATION BAR -->
+  <nav class="bg-white shadow-lg sticky top-0 z-50 fade-in border-b border-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <div class="flex items-center">
+          <span class="font-bold text-xl text-blue-600">Bab Coding Group</span>
+          <span class="ml-2 text-sm text-gray-500">| Preview Portal</span>
+        </div>
+        <div class="hidden md:block">
+          <div class="ml-10 flex items-baseline space-x-4">
+            <a href="https://babcoding.com" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">
+              <i class="bi bi-house-door mr-1"></i>Main Website
+            </a>
+            <a href="mailto:ayhamissa416@gmail.com" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">
+              <i class="bi bi-envelope mr-1"></i>Contact
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <div class="container mx-auto px-4 py-12 mobile-padding">
+    
+    <!-- HEADER SECTION -->
+    <div class="text-center mb-12 fade-in">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">
+        <span class="gradient-text">Website Previews</span>
+      </h1>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto mobile-text">
+        Welcome to our preview portal! Here you can view and test your website before it goes live. 
+        Each preview is a fully functional version of your site for your review and feedback.
+      </p>
+    </div>
+
+    <!-- INSTRUCTIONS SECTION -->
+    <div class="bg-white rounded-xl p-8 card-shadow mb-12 slide-up">
+      <div class="flex items-start">
+        <div class="flex-shrink-0">
+          <i class="bi bi-info-circle text-blue-600 text-2xl"></i>
+        </div>
+        <div class="ml-4">
+          <h3 class="text-lg font-semibold text-gray-800 mb-2">How to Use This Portal</h3>
+          <ul class="text-gray-600 space-y-2">
+            <li class="flex items-start">
+              <i class="bi bi-check-circle-fill text-green-500 mr-2 mt-1"></i>
+              <span>Click on any preview card below to view your website</span>
+            </li>
+            <li class="flex items-start">
+              <i class="bi bi-check-circle-fill text-green-500 mr-2 mt-1"></i>
+              <span>Test all functionality, links, and features thoroughly</span>
+            </li>
+            <li class="flex items-start">
+              <i class="bi bi-check-circle-fill text-green-500 mr-2 mt-1"></i>
+              <span>Send us feedback via email with any requested changes</span>
+            </li>
+            <li class="flex items-start">
+              <i class="bi bi-check-circle-fill text-green-500 mr-2 mt-1"></i>
+              <span>Once approved, we'll deploy your site to its final domain</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- PREVIEW LISTINGS SECTION -->
+    <div class="mb-12">
+      <h2 class="text-3xl font-bold text-center mb-8 text-gray-800">Available Previews</h2>
+      
+      <!-- PREVIEW GRID -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 preview-grid">
+        
+        <!-- SAMPLE PREVIEW CARD 1 -->
+        <div class="preview-card bg-white rounded-xl overflow-hidden card-shadow">
+          <div class="relative">
+            <div class="bg-gradient-to-r from-blue-500 to-purple-600 h-32 flex items-center justify-center">
+              <i class="bi bi-globe text-white text-3xl"></i>
+            </div>
+            <div class="absolute top-3 right-3">
+              <span class="status-badge status-ready">Ready for Review</span>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Sample Restaurant Website</h3>
+            <p class="text-gray-600 mb-4">A modern restaurant website with menu, reservations, and contact information.</p>
+            <div class="flex items-center justify-between">
+              <span class="text-sm text-gray-500">
+                <i class="bi bi-calendar mr-1"></i>
+                Updated: Dec 20, 2024
+              </span>
+              <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-200">
+                <i class="bi bi-eye mr-1"></i>
+                View Preview
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- SAMPLE PREVIEW CARD 2 -->
+        <div class="preview-card bg-white rounded-xl overflow-hidden card-shadow">
+          <div class="relative">
+            <div class="bg-gradient-to-r from-green-500 to-teal-600 h-32 flex items-center justify-center">
+              <i class="bi bi-shop text-white text-3xl"></i>
+            </div>
+            <div class="absolute top-3 right-3">
+              <span class="status-badge status-review">Under Review</span>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Local Business Portfolio</h3>
+            <p class="text-gray-600 mb-4">Professional portfolio showcasing services, testimonials, and contact details.</p>
+            <div class="flex items-center justify-between">
+              <span class="text-sm text-gray-500">
+                <i class="bi bi-calendar mr-1"></i>
+                Updated: Dec 18, 2024
+              </span>
+              <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-200">
+                <i class="bi bi-eye mr-1"></i>
+                View Preview
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- SAMPLE PREVIEW CARD 3 -->
+        <div class="preview-card bg-white rounded-xl overflow-hidden card-shadow">
+          <div class="relative">
+            <div class="bg-gradient-to-r from-orange-500 to-red-600 h-32 flex items-center justify-center">
+              <i class="bi bi-building text-white text-3xl"></i>
+            </div>
+            <div class="absolute top-3 right-3">
+              <span class="status-badge status-development">In Development</span>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Non-Profit Organization</h3>
+            <p class="text-gray-600 mb-4">Community-focused website with donation system and event calendar.</p>
+            <div class="flex items-center justify-between">
+              <span class="text-sm text-gray-500">
+                <i class="bi bi-calendar mr-1"></i>
+                Updated: Dec 15, 2024
+              </span>
+              <button class="bg-gray-400 text-white px-4 py-2 rounded-lg cursor-not-allowed">
+                <i class="bi bi-clock mr-1"></i>
+                Coming Soon
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- CONTACT SECTION -->
+    <div class="bg-gradient-to-r from-blue-600 to-green-600 text-white py-12 px-8 rounded-2xl text-center slide-up">
+      <h2 class="text-3xl font-bold mb-4">Need Help or Have Feedback?</h2>
+      <p class="text-xl mb-6 text-blue-100">
+        We're here to help! Contact us with any questions or requested changes.
+      </p>
+      <div class="flex flex-col md:flex-row gap-4 justify-center">
+        <a href="mailto:ayhamissa416@gmail.com" 
+           class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200">
+          <i class="bi bi-envelope mr-2"></i>
+          Send Feedback
+        </a>
+        <a href="https://babcoding.com" 
+           class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors duration-200">
+          <i class="bi bi-house mr-2"></i>
+          Back to Main Site
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="mt-16 py-8 bg-white border-t border-gray-200">
+    <div class="text-center text-sm text-gray-600">
+      <p class="mb-2">© 2025 Bab Coding Group | Preview Portal</p>
+      <p class="mb-1">Fiscally sponsored by HCB, a 501(c)(3) nonprofit</p>
+      <p>EIN: 81-2908499</p>
+    </div>
+  </footer>
+
+  <script>
+    // Add smooth animations on scroll
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, observerOptions);
+
+    // Observe all preview cards
+    document.querySelectorAll('.preview-card').forEach(card => {
+      card.style.opacity = '0';
+      card.style.transform = 'translateY(20px)';
+      card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+      observer.observe(card);
+    });
+
+    // Add click tracking for preview cards
+    document.querySelectorAll('.preview-card a').forEach(link => {
+      link.addEventListener('click', (e) => {
+        // Add analytics or tracking here if needed
+        console.log('Preview accessed:', e.target.closest('.preview-card').querySelector('h3').textContent);
+      });
+    });
+  </script>
+
+</body>
+</html>
