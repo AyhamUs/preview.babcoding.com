@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matthew Moore Photography | Senior Portraits, Sports & Event Photography</title>
+    <meta name="description" content="Professional photographer specializing in senior portraits, sports photography, and event coverage. Capturing real moments and authentic stories through stunning photography.">
+    <meta name="keywords" content="photography, senior portraits, sports photography, graduation photos, event photography, Matthew Moore, photographer">
+    <meta name="author" content="Matthew Moore">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Matthew Moore Photography - Capturing Real Moments">
+    <meta property="og:description" content="Professional photographer specializing in senior portraits, sports photography, and event coverage.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://example.com/og-image.jpg">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Matthew Moore Photography">
+    <meta name="twitter:description" content="Capturing real moments and authentic stories through stunning photography.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    animation: {
+                        'fade-in': 'fadeIn 1s ease-in',
+                        'slide-up': 'slideUp 0.8s ease-out',
+                        'slide-right': 'slideRight 0.8s ease-out',
+                        'float': 'float 6s ease-in-out infinite',
+                        'pulse-slow': 'pulse 3s ease-in-out infinite',
+                        'zoom-in': 'zoomIn 0.5s ease-out',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        },
+                        slideUp: {
+                            '0%': { transform: 'translateY(50px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' },
+                        },
+                        slideRight: {
+                            '0%': { transform: 'translateX(-50px)', opacity: '0' },
+                            '100%': { transform: 'translateX(0)', opacity: '1' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-20px)' },
+                        },
+                        zoomIn: {
+                            '0%': { transform: 'scale(0.9)', opacity: '0' },
+                            '100%': { transform: 'scale(1)', opacity: '1' },
+                        }
+                    },
+                    fontFamily: {
+                        'serif': ['Playfair Display', 'serif'],
+                        'sans': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 text-gray-900 overflow-x-hidden">
+    
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-sm shadow-lg transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-3">
+                    <div class="w-12 h-12 bg-gradient-to-r from-amber-500 to-orange-600 rounded-full flex items-center justify-center shadow-lg">
+                        <i class="fas fa-camera text-white text-xl"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-2xl font-serif font-bold text-gray-900">Matthew Moore</h1>
+                        <p class="text-sm text-gray-600 -mt-1">Photography</p>
+                    </div>
+                </div>
+                
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-amber-600 transition-colors font-medium">Home</a>
+                    <a href="#about" class="text-gray-700 hover:text-amber-600 transition-colors font-medium">About</a>
+                    <a href="#approach" class="text-gray-700 hover:text-amber-600 transition-colors font-medium">My Approach</a>
+                    <a href="#services" class="text-gray-700 hover:text-amber-600 transition-colors font-medium">Services</a>
+                    <a href="#portfolio" class="text-gray-700 hover:text-amber-600 transition-colors font-medium">Galleries</a>
+                    <a href="#contact" class="text-gray-700 hover:text-amber-600 transition-colors font-medium">Contact</a>
+                </div>
+                
+                <button class="md:hidden text-gray-700 hover:text-amber-600">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center relative overflow-hidden">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-800 to-amber-900"></div>
+        <div class="absolute inset-0 bg-black/40"></div>
+        
+        <!-- Decorative Elements -->
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="absolute top-20 left-20 w-3 h-3 bg-amber-400 rounded-full animate-float opacity-60"></div>
+            <div class="absolute top-40 right-32 w-2 h-2 bg-orange-400 rounded-full animate-float opacity-40" style="animation-delay: 1s;"></div>
+            <div class="absolute bottom-40 left-1/4 w-4 h-4 bg-yellow-400 rounded-full animate-float opacity-50" style="animation-delay: 2s;"></div>
+            <div class="absolute top-60 right-20 w-2 h-2 bg-amber-300 rounded-full animate-float opacity-70" style="animation-delay: 3s;"></div>
+        </div>
+        
+        <div class="relative z-10 text-center max-w-5xl mx-auto px-4">
+            <div class="animate-fade-in">
+                <h1 class="text-6xl md:text-8xl font-serif font-bold mb-6 text-white leading-tight">
+                    Capturing
+                    <span class="block bg-gradient-to-r from-amber-400 via-orange-500 to-red-500 bg-clip-text text-transparent">
+                        Real Moments
+                    </span>
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto animate-slide-up">
+                    Professional photography specializing in senior portraits, sports action, and life's most meaningful events
+                </p>
+                <div class="flex flex-col sm:flex-row gap-6 justify-center animate-slide-up" style="animation-delay: 0.3s;">
+                    <button class="bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 px-10 py-4 rounded-full text-white font-semibold text-lg transition-all transform hover:scale-105 hover:shadow-2xl">
+                        Book a Session
+                    </button>
+                    <button class="border-2 border-white/70 hover:border-white px-10 py-4 rounded-full text-white font-semibold text-lg transition-all hover:bg-white/10">
+                        View Portfolio
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <div class="w-6 h-10 border-2 border-white/70 rounded-full flex justify-center">
+                <div class="w-1 h-3 bg-white rounded-full mt-2 animate-pulse"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="animate-slide-right">
+                    <h2 class="text-5xl font-serif font-bold mb-8 text-gray-900">
+                        Hello, I'm
+                        <span class="bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent">Matthew</span>
+                    </h2>
+                    <div class="prose prose-lg text-gray-700 leading-relaxed space-y-6">
+                        <p>
+                            Hello, my name is Matthew Moore and I am a passionate photographer dedicated to capturing the real, the raw, and the unforgettable. Based in Pewaukee, Wisconsin, I've been pursuing photography professionally since 2023, focusing on what matters most—the pride in a senior's eyes as they step into their final year, the adrenaline of a game-winning moment, or the joy of walking across the graduation stage—I'm there for it all.
+                        </p>
+                        <p>
+                            I specialize in senior portraits, sports photography, event coverage, and graduation sessions, bringing a creative edge and a calm, professional vibe to every shoot. My goal is to not just take photos, but to tell your story—whether you're an athlete in motion, a student celebrating a milestone, or a proud parent cheering from the crowd.
+                        </p>
+                        <p>
+                            Every session is personalized, relaxed, and designed to highlight what makes you stand out. I believe the best photos come when you're being yourself, and I'm here to help you feel confident, comfortable, and seen.
+                        </p>
+                        <p class="font-semibold text-amber-700">
+                            Let's create something memorable together—photos that not only look good, but feel like you.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="relative animate-slide-up">
+                    <div class="aspect-square rounded-3xl overflow-hidden shadow-2xl group">
+                        <img 
+                            src="matthew.jpg" 
+                            alt="Matthew Moore - Professional Photographer" 
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                            onError="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                        />
+                        <!-- Fallback if image doesn't load -->
+                        <div class="w-full h-full bg-gradient-to-br from-amber-100 to-orange-100 hidden items-center justify-center">
+                            <div class="w-full h-full bg-gradient-to-br from-amber-500/20 to-orange-500/20 flex items-center justify-center">
+                                <i class="fas fa-user-circle text-8xl text-amber-600/50"></i>
+                            </div>
+                        </div>
+                        <!-- Photo overlay on hover -->
+                        <div class="absolute inset-0 bg-gradient-to-t from-amber-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                    <!-- Decorative Elements -->
+                    <div class="absolute -top-6 -right-6 w-24 h-24 bg-gradient-to-r from-amber-400 to-orange-500 rounded-full opacity-80 animate-float shadow-lg"></div>
+                    <div class="absolute -bottom-6 -left-6 w-16 h-16 bg-gradient-to-r from-orange-400 to-red-500 rounded-full opacity-60 animate-float shadow-lg" style="animation-delay: 1s;"></div>
+                    <!-- Camera Icon Badge -->
+                    <div class="absolute bottom-4 right-4 w-12 h-12 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center shadow-lg">
+                        <i class="fas fa-camera text-amber-600 text-lg"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- My Approach Section -->
+    <section id="approach" class="py-20 bg-gradient-to-br from-gray-50 to-amber-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl font-serif font-bold mb-6 text-gray-900">
+                    My <span class="bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent">Approach</span>
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Photography isn't just about clicking a button—it's about capturing real emotion, real moments, and real people.
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="space-y-8">
+                    <div class="prose prose-lg text-gray-700 leading-relaxed space-y-6">
+                        <p>
+                            My approach is centered around connection, authenticity, and storytelling. Whether I'm photographing a senior ready to take on the world, an athlete in their element, or a graduate celebrating the end of an incredible journey, I focus on creating a space where people feel comfortable, confident, and truly themselves.
+                        </p>
+                        <p>
+                            Before every session, I take time to understand what makes you unique—your style, your energy, your story. During the shoot, I keep things relaxed and natural so nothing feels forced or stiff. I use a mix of guided direction and candid moments to bring out the best version of you on camera.
+                        </p>
+                        <p>
+                            For sports, I look for intensity, motion, and those split-second expressions that tell the whole story of a game. For events, I focus on capturing the atmosphere, emotion, and interactions that make every occasion special. For seniors and grads, I aim to freeze a moment in time that reflects both who you are and who you're becoming.
+                        </p>
+                        <p class="font-semibold text-amber-700">
+                            At the end of the day, I'm not just here to take great photos—I'm here to help you feel seen, celebrated, and proud of where you are right now.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- First Row: Authentic Connection and Comfortable Environment (side by side) -->
+                    <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all">
+                        <div class="w-12 h-12 bg-gradient-to-r from-amber-500 to-orange-600 rounded-xl flex items-center justify-center mb-4">
+                            <i class="fas fa-heart text-white text-xl"></i>
+                        </div>
+                        <h3 class="font-semibold text-gray-900 mb-2">Authentic Connection</h3>
+                        <p class="text-gray-600 text-sm">Building genuine relationships to capture real emotions</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all">
+                        <div class="w-12 h-12 bg-gradient-to-r from-green-500 to-emerald-600 rounded-xl flex items-center justify-center mb-4">
+                            <i class="fas fa-smile text-white text-xl"></i>
+                        </div>
+                        <h3 class="font-semibold text-gray-900 mb-2">Comfortable Environment</h3>
+                        <p class="text-gray-600 text-sm">Relaxed sessions that bring out your best</p>
+                    </div>
+                    
+                    <!-- Second Row: Storytelling Vision and Professional Quality -->
+                    <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all">
+                        <div class="w-12 h-12 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center mb-4">
+                            <i class="fas fa-eye text-white text-xl"></i>
+                        </div>
+                        <h3 class="font-semibold text-gray-900 mb-2">Storytelling Vision</h3>
+                        <p class="text-gray-600 text-sm">Every photo tells your unique story</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all">
+                        <div class="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-600 rounded-xl flex items-center justify-center mb-4">
+                            <i class="fas fa-star text-white text-xl"></i>
+                        </div>
+                        <h3 class="font-semibold text-gray-900 mb-2">Professional Quality</h3>
+                        <p class="text-gray-600 text-sm">High-end equipment and expert editing</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl font-serif font-bold mb-6 text-gray-900">
+                    Photography <span class="bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent">Services</span>
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Professional photography packages tailored to capture your most important moments
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Sports Photography -->
+                <div class="group relative bg-gradient-to-br from-blue-50 to-indigo-50 p-8 rounded-3xl border-2 border-blue-100 hover:border-blue-300 transition-all hover:transform hover:scale-105 hover:shadow-2xl">
+                    <div class="text-right mb-4">
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold">NR 01</span>
+                    </div>
+                    <div class="w-16 h-16 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-2xl flex items-center justify-center mb-6 group-hover:animate-pulse">
+                        <i class="fas fa-running text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-3xl font-serif font-bold mb-6 text-gray-900">Sports</h3>
+                    
+                    <div class="space-y-6 mb-8">
+                        <div class="bg-white p-4 rounded-xl shadow-sm">
+                            <h4 class="font-semibold text-blue-800 mb-2">Individual Athlete Session – $100</h4>
+                            <ul class="text-gray-600 space-y-1 text-sm">
+                                <li>• 45-minute session</li>
+                                <li>• Action & portrait shots</li>
+                                <li>• 15–20 edited images</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-white p-4 rounded-xl shadow-sm">
+                            <h4 class="font-semibold text-blue-800 mb-2">Team Coverage – $300/game</h4>
+                            <ul class="text-gray-600 space-y-1 text-sm">
+                                <li>• Full game coverage</li>
+                                <li>• Action shots + portrait</li>
+                                <li>• 60+ edited images</li>
+                                <li>• Online gallery for team access</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center mb-6">
+                        <div class="text-3xl font-bold text-blue-700">$100-300</div>
+                    </div>
+                    
+                    <button class="w-full bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white font-semibold py-3 rounded-full transition-all transform hover:scale-105">
+                        Inquire Today
+                    </button>
+                </div>
+                
+                <!-- Senior/Grad Photography -->
+                <div class="group relative bg-gradient-to-br from-amber-50 to-orange-50 p-8 rounded-3xl border-2 border-amber-200 hover:border-amber-400 transition-all hover:transform hover:scale-105 hover:shadow-2xl">
+                    <div class="text-right mb-4">
+                        <span class="bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-sm font-semibold">NR 02</span>
+                    </div>
+                    <div class="w-16 h-16 bg-gradient-to-r from-amber-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:animate-pulse">
+                        <i class="fas fa-graduation-cap text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-3xl font-serif font-bold mb-6 text-gray-900">Senior/Grad</h3>
+                    
+                    <div class="space-y-6 mb-8">
+                        <div class="bg-white p-4 rounded-xl shadow-sm">
+                            <h4 class="font-semibold text-amber-800 mb-2">Basic Package – $100</h4>
+                            <ul class="text-gray-600 space-y-1 text-sm">
+                                <li>• 1-hour session</li>
+                                <li>• 1 location, 2 outfits</li>
+                                <li>• 10-15 edited images</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-white p-4 rounded-xl shadow-sm">
+                            <h4 class="font-semibold text-amber-800 mb-2">Deluxe Senior Package – $175</h4>
+                            <ul class="text-gray-600 space-y-1 text-sm">
+                                <li>• 2-hour session</li>
+                                <li>• Up to 2 locations & 4 outfits</li>
+                                <li>• 30+ edited images</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center mb-6">
+                        <div class="text-3xl font-bold text-amber-700">$100-175</div>
+                    </div>
+                    
+                    <button class="w-full bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-white font-semibold py-3 rounded-full transition-all transform hover:scale-105">
+                        Inquire Today
+                    </button>
+                </div>
+                
+                <!-- Events Photography -->
+                <div class="group relative bg-gradient-to-br from-purple-50 to-pink-50 p-8 rounded-3xl border-2 border-purple-200 hover:border-purple-400 transition-all hover:transform hover:scale-105 hover:shadow-2xl">
+                    <div class="text-right mb-4">
+                        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-semibold">NR 03</span>
+                    </div>
+                    <div class="w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-600 rounded-2xl flex items-center justify-center mb-6 group-hover:animate-pulse">
+                        <i class="fas fa-calendar-alt text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-3xl font-serif font-bold mb-6 text-gray-900">Events</h3>
+                    
+                    <div class="space-y-6 mb-8">
+                        <div class="bg-white p-4 rounded-xl shadow-sm">
+                            <h4 class="font-semibold text-purple-800 mb-2">Full Event Coverage – $150/hour</h4>
+                            <ul class="text-gray-600 space-y-1 text-sm">
+                                <li>• 2-hour minimum booking</li>
+                                <li>• Unlimited photos taken</li>
+                                <li>• 60–100 edited images per hour</li>
+                                <li>• Online gallery delivery</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center mb-6">
+                        <div class="text-3xl font-bold text-purple-700">$150</div>
+                        <div class="text-sm text-gray-600">per hour</div>
+                    </div>
+                    
+                    <button class="w-full bg-gradient-to-r from-purple-500 to-pink-600 hover:from-purple-600 hover:to-pink-700 text-white font-semibold py-3 rounded-full transition-all transform hover:scale-105">
+                        Inquire Today
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-gradient-to-br from-gray-900 to-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl font-serif font-bold mb-6 text-white">
+                    Photo <span class="bg-gradient-to-r from-amber-400 to-orange-500 bg-clip-text text-transparent">Galleries</span>
+                </h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    Explore my work across different photography specialties - each gallery showcases the unique moments and stories I capture
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Sports Gallery -->
+                <div class="group relative overflow-hidden rounded-3xl bg-gradient-to-br from-blue-500 to-indigo-600 aspect-[4/5] hover:transform hover:scale-105 transition-all duration-300 cursor-pointer">
+                    <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-all"></div>
+                    <div class="absolute inset-0 p-8 flex flex-col justify-between">
+                        <div class="flex justify-between items-start">
+                            <div class="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center">
+                                <i class="fas fa-running text-white text-2xl"></i>
+                            </div>
+                            <span class="bg-white/20 backdrop-blur-sm text-white px-3 py-1 rounded-full text-sm font-semibold">
+                                Sports
+                            </span>
+                        </div>
+                        <div class="text-white transform translate-y-4 group-hover:translate-y-0 transition-transform">
+                            <h3 class="text-3xl font-serif font-bold mb-3">Sports Photography</h3>
+                            <p class="text-lg opacity-90 mb-4">Action shots, team photos, and athletic moments that capture the intensity and passion of sports</p>
+                            <div class="flex items-center text-amber-400 font-semibold">
+                                <span>View Gallery</span>
+                                <i class="fas fa-arrow-right ml-2 transform group-hover:translate-x-2 transition-transform"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Background pattern -->
+                    <div class="absolute top-4 right-4 w-32 h-32 opacity-10">
+                        <i class="fas fa-football-ball text-white text-6xl"></i>
+                    </div>
+                </div>
+                
+                <!-- Individual/Senior Gallery -->
+                <div class="group relative overflow-hidden rounded-3xl bg-gradient-to-br from-amber-500 to-orange-600 aspect-[4/5] hover:transform hover:scale-105 transition-all duration-300 cursor-pointer">
+                    <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-all"></div>
+                    <div class="absolute inset-0 p-8 flex flex-col justify-between">
+                        <div class="flex justify-between items-start">
+                            <div class="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center">
+                                <i class="fas fa-user-graduate text-white text-2xl"></i>
+                            </div>
+                            <span class="bg-white/20 backdrop-blur-sm text-white px-3 py-1 rounded-full text-sm font-semibold">
+                                Individual
+                            </span>
+                        </div>
+                        <div class="text-white transform translate-y-4 group-hover:translate-y-0 transition-transform">
+                            <h3 class="text-3xl font-serif font-bold mb-3">Individual Portraits</h3>
+                            <p class="text-lg opacity-90 mb-4">Senior portraits, graduation photos, and personal sessions that showcase your unique personality</p>
+                            <div class="flex items-center text-amber-200 font-semibold">
+                                <span>View Gallery</span>
+                                <i class="fas fa-arrow-right ml-2 transform group-hover:translate-x-2 transition-transform"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Background pattern -->
+                    <div class="absolute top-4 right-4 w-32 h-32 opacity-10">
+                        <i class="fas fa-graduation-cap text-white text-6xl"></i>
+                    </div>
+                </div>
+                
+                <!-- Events Gallery -->
+                <div class="group relative overflow-hidden rounded-3xl bg-gradient-to-br from-purple-500 to-pink-600 aspect-[4/5] hover:transform hover:scale-105 transition-all duration-300 cursor-pointer">
+                    <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-all"></div>
+                    <div class="absolute inset-0 p-8 flex flex-col justify-between">
+                        <div class="flex justify-between items-start">
+                            <div class="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center">
+                                <i class="fas fa-calendar-alt text-white text-2xl"></i>
+                            </div>
+                            <span class="bg-white/20 backdrop-blur-sm text-white px-3 py-1 rounded-full text-sm font-semibold">
+                                Events
+                            </span>
+                        </div>
+                        <div class="text-white transform translate-y-4 group-hover:translate-y-0 transition-transform">
+                            <h3 class="text-3xl font-serif font-bold mb-3">Event Photography</h3>
+                            <p class="text-lg opacity-90 mb-4">Celebrations, ceremonies, and special occasions captured with attention to every meaningful detail</p>
+                            <div class="flex items-center text-purple-200 font-semibold">
+                                <span>View Gallery</span>
+                                <i class="fas fa-arrow-right ml-2 transform group-hover:translate-x-2 transition-transform"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Background pattern -->
+                    <div class="absolute top-4 right-4 w-32 h-32 opacity-10">
+                        <i class="fas fa-birthday-cake text-white text-6xl"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-16">
+                <p class="text-gray-300 text-lg mb-6">
+                    Each gallery showcases the unique style and approach I bring to different types of photography
+                </p>
+                <a href="#contact" class="inline-flex items-center bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 px-10 py-4 rounded-full text-white font-semibold text-lg transition-all transform hover:scale-105">
+                    <i class="fas fa-camera mr-3"></i>
+                    Book Your Session
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl font-serif font-bold mb-6 text-gray-900">
+                    Let's <span class="bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent">Connect</span>
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Ready to capture your story? Let's discuss your vision and create something beautiful together.
+                </p>
+            </div>
+            
+            <!-- Contact Info -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-gradient-to-br from-amber-50 to-orange-50 p-8 rounded-3xl border border-amber-200">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-16 h-16 bg-gradient-to-r from-amber-500 to-orange-600 rounded-2xl flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-envelope text-white text-xl"></i>
+                            </div>
+                            <div class="min-w-0 flex-1">
+                                <h4 class="text-xl font-serif font-bold text-gray-900 mb-2">Email Me</h4>
+                                <p class="text-gray-700 mb-3">Quick questions & booking</p>
+                                <a href="mailto:moormat26@gmail.com" class="text-amber-600 font-semibold hover:text-amber-700 break-all">
+                                    moormat26@gmail.com
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-blue-50 to-indigo-50 p-8 rounded-3xl border border-blue-200">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-16 h-16 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-2xl flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-phone text-white text-xl"></i>
+                            </div>
+                            <div class="min-w-0 flex-1">
+                                <h4 class="text-xl font-serif font-bold text-gray-900 mb-2">Call or Text</h4>
+                                <p class="text-gray-700 mb-3">Let's discuss your needs</p>
+                                <a href="tel:+12623661255" class="text-blue-600 font-semibold hover:text-blue-700">
+                                    (262) 366-1255
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-green-50 to-emerald-50 p-8 rounded-3xl border border-green-200">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-16 h-16 bg-gradient-to-r from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-map-marker-alt text-white text-xl"></i>
+                            </div>
+                            <div class="min-w-0 flex-1">
+                                <h4 class="text-xl font-serif font-bold text-gray-900 mb-2">Service Area</h4>
+                                <p class="text-gray-700 mb-3">Pewaukee, WI & region</p>
+                                <p class="text-green-600 font-semibold">
+                                    Local & Travel Available
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-purple-50 to-pink-50 p-8 rounded-3xl border border-purple-200">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-16 h-16 bg-gradient-to-r from-pink-500 to-purple-600 rounded-2xl flex items-center justify-center flex-shrink-0">
+                                <i class="fab fa-instagram text-white text-xl"></i>
+                            </div>
+                            <div class="min-w-0 flex-1">
+                                <h4 class="text-xl font-serif font-bold text-gray-900 mb-2">Follow My Work</h4>
+                                <p class="text-gray-700 mb-3">Latest photo updates</p>
+                                <a href="https://www.instagram.com/matthew.moore.photo/" target="_blank" rel="noopener noreferrer" class="text-purple-600 font-semibold hover:text-purple-700 break-all">
+                                    @matthew.moore.photo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <div class="flex justify-center space-x-4 mb-8">
+                    <a href="https://account.venmo.com/u/MatthewMoore26" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-amber-400 transition-colors">
+                        <i class="fab fa-venmo text-2xl"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 text-center">
+                <p class="text-gray-400">
+                    © 2025 Matthew Moore Photography. All rights reserved. Capturing moments that matter.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Smooth Scrolling & Interactive Scripts -->
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-2xl');
+                nav.classList.remove('shadow-lg');
+            } else {
+                nav.classList.add('shadow-lg');
+                nav.classList.remove('shadow-2xl');
+            }
+        });
+
+        // Intersection Observer for scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for animation
+        document.querySelectorAll('.animate-slide-up, .animate-slide-right, .animate-fade-in').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            observer.observe(el);
+        });
+
+        // Portfolio hover effects
+        document.querySelectorAll('.group').forEach(item => {
+            item.addEventListener('mouseenter', function() {
+                this.style.transform = 'scale(1.05)';
+            });
+            
+            item.addEventListener('mouseleave', function() {
+                this.style.transform = 'scale(1)';
+            });
+        });
+
+        // Service card interactions
+        document.querySelectorAll('button').forEach(button => {
+            button.addEventListener('click', function(e) {
+                if (this.textContent.includes('Inquire')) {
+                    e.preventDefault();
+                    // Scroll to contact section
+                    document.querySelector('#contact').scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Gallery card interactions
+        document.querySelectorAll('#portfolio .group').forEach((card, index) => {
+            card.addEventListener('click', function() {
+                const galleries = ['sports-gallery.html', 'individual-gallery.html', 'events-gallery.html'];
+                const galleryNames = ['Sports', 'Individual', 'Events'];
+                
+                // Navigate to the actual gallery page
+                window.location.href = galleries[index];
+            });
+        });
+
+        // Form enhancements
+        const form = document.querySelector('form');
+        if (form) {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                // Add success animation or handling here
+                alert('Thank you for your message! I\'ll get back to you soon.');
+            });
+        }
+    </script>
+</body>
+</html>
