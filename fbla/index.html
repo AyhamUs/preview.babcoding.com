@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pewaukee High School FBLA Chapter - Empowering Future Business Leaders. Join us for the Region VII/7 Regional Leadership Conference and discover opportunities in business leadership.">
+    <meta name="keywords" content="Pewaukee FBLA, Future Business Leaders of America, Region VII FBLA Conference, Pewaukee High School, business leadership, student organization">
+    <title>Pewaukee High School FBLA - Empowering Future Business Leaders</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'pewaukee-red': {
+                            50: '#fef2f2',
+                            100: '#fee2e2',
+                            200: '#fecaca',
+                            300: '#fca5a5',
+                            400: '#f87171',
+                            500: '#ef4444',
+                            600: '#dc2626',
+                            700: '#b91c1c',
+                            800: '#991b1b',
+                            900: '#7f1d1d'
+                        },
+                        'pewaukee-black': {
+                            50: '#f8f8f8',
+                            100: '#e5e5e5',
+                            200: '#cccccc',
+                            300: '#999999',
+                            400: '#666666',
+                            500: '#333333',
+                            600: '#1a1a1a',
+                            700: '#0d0d0d',
+                            800: '#050505',
+                            900: '#000000'
+                        }
+                    },
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif']
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.8s ease-out',
+                        'slide-up': 'slideUp 0.8s ease-out',
+                        'slide-in-left': 'slideInLeft 0.8s ease-out',
+                        'slide-in-right': 'slideInRight 0.8s ease-out',
+                        'bounce-in': 'bounceIn 0.6s ease-out',
+                        'pulse-slow': 'pulse 3s infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'glow': 'glow 2s ease-in-out infinite alternate',
+                        'spin-slow': 'spin 3s linear infinite',
+                        'scale-pulse': 'scalePulse 2s ease-in-out infinite',
+                        'fade-out': 'fadeOut 0.8s ease-out',
+                        'logo-bounce': 'logoBounce 1.5s ease-out',
+                        'loading-dots': 'loadingDots 1.5s infinite'
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' }
+                        },
+                        slideUp: {
+                            '0%': { opacity: '0', transform: 'translateY(30px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' }
+                        },
+                        slideInLeft: {
+                            '0%': { opacity: '0', transform: 'translateX(-30px)' },
+                            '100%': { opacity: '1', transform: 'translateX(0)' }
+                        },
+                        slideInRight: {
+                            '0%': { opacity: '0', transform: 'translateX(30px)' },
+                            '100%': { opacity: '1', transform: 'translateX(0)' }
+                        },
+                        bounceIn: {
+                            '0%': { opacity: '0', transform: 'scale(0.3)' },
+                            '50%': { transform: 'scale(1.05)' },
+                            '70%': { transform: 'scale(0.9)' },
+                            '100%': { opacity: '1', transform: 'scale(1)' }
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-10px)' }
+                        },
+                        glow: {
+                            'from': { 'box-shadow': '0 0 20px rgba(185, 28, 28, 0.5)' },
+                            'to': { 'box-shadow': '0 0 30px rgba(185, 28, 28, 0.8), 0 0 40px rgba(185, 28, 28, 0.6)' }
+                        },
+                        scalePulse: {
+                            '0%, 100%': { transform: 'scale(1)' },
+                            '50%': { transform: 'scale(1.1)' }
+                        },
+                        fadeOut: {
+                            '0%': { opacity: '1' },
+                            '100%': { opacity: '0', visibility: 'hidden' }
+                        },
+                        logoBounce: {
+                            '0%': { transform: 'scale(0) rotate(0deg)' },
+                            '50%': { transform: 'scale(1.2) rotate(180deg)' },
+                            '100%': { transform: 'scale(1) rotate(360deg)' }
+                        },
+                        loadingDots: {
+                            '0%, 20%': { transform: 'scale(1)' },
+                            '50%': { transform: 'scale(1.5)' },
+                            '80%, 100%': { transform: 'scale(1)' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loadingScreen" class="fixed inset-0 bg-white flex items-center justify-center z-50">
+        <div class="text-center">
+            <!-- Logo -->
+            <div class="mb-8 flex justify-center">
+                <img src="https://static.wixstatic.com/media/7c32ee_322121c9ac8c4974a9f78e7ca0e20d13~mv2.png/v1/fit/w_2500,h_1330,al_c/7c32ee_322121c9ac8c4974a9f78e7ca0e20d13~mv2.png" 
+                     alt="Pewaukee High School Logo" 
+                     class="w-32 h-32 object-contain animate-fade-in">
+            </div>
+            
+            <!-- Text Content -->
+            <div class="space-y-6">
+                <h1 class="text-4xl font-bold text-pewaukee-red-700 animate-fade-in">
+                    Pewaukee FBLA
+                </h1>
+                
+                <!-- Simple Loading Spinner -->
+                <div class="mt-8">
+                    <div class="w-12 h-12 border-4 border-pewaukee-red-700 border-t-transparent rounded-full animate-spin mx-auto"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Website Content -->
+    <div id="mainContent" class="opacity-0">
+        <!-- Header -->
+    <header class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-4">
+                    <img src="https://static.wixstatic.com/media/7c32ee_322121c9ac8c4974a9f78e7ca0e20d13~mv2.png/v1/fit/w_2500,h_1330,al_c/7c32ee_322121c9ac8c4974a9f78e7ca0e20d13~mv2.png" alt="Pewaukee High School Logo" class="h-12 w-12 object-contain">
+                    <div>
+                        <h1 class="text-xl font-bold text-pewaukee-red-700">Pewaukee FBLA</h1>
+                        <span class="text-sm text-gray-600">Future Business Leaders of America</span>
+                    </div>
+                </div>
+                
+                <nav class="hidden md:flex space-x-8" id="navigation">
+                    <a href="index.html" class="text-pewaukee-red-700 bg-gray-100 hover:text-pewaukee-black-800 px-3 py-2 rounded-md font-semibold transition-all duration-300 flex items-center hover:shadow-md hover:scale-105 transform">
+                        <i class="bi bi-house mr-2 transition-transform duration-300 hover:rotate-12"></i>Home
+                    </a>
+                    <a href="about.html" class="text-pewaukee-black-700 hover:text-pewaukee-red-600 px-3 py-2 rounded-md font-semibold transition-all duration-300 flex items-center hover:shadow-md hover:scale-105 transform hover:bg-gray-50">
+                        <i class="bi bi-people mr-2 transition-transform duration-300 hover:rotate-12"></i>About Us
+                    </a>
+                    <a href="rlc.html" class="text-pewaukee-black-700 hover:text-pewaukee-red-600 px-3 py-2 rounded-md font-semibold transition-all duration-300 flex items-center hover:shadow-md hover:scale-105 transform hover:bg-gray-50">
+                        <i class="bi bi-calendar-event mr-2 transition-transform duration-300 hover:rotate-12"></i>RLC Conference
+                    </a>
+                    <a href="events.html" class="text-pewaukee-black-700 hover:text-pewaukee-red-600 px-3 py-2 rounded-md font-semibold transition-all duration-300 flex items-center hover:shadow-md hover:scale-105 transform hover:bg-gray-50">
+                        <i class="bi bi-calendar3 mr-2 transition-transform duration-300 hover:rotate-12"></i>Events
+                    </a>
+                    <a href="resources.html" class="text-pewaukee-black-700 hover:text-pewaukee-red-600 px-3 py-2 rounded-md font-semibold transition-all duration-300 flex items-center hover:shadow-md hover:scale-105 transform hover:bg-gray-50">
+                        <i class="bi bi-book mr-2 transition-transform duration-300 hover:rotate-12"></i>Resources
+                    </a>
+                    <a href="contact.html" class="text-pewaukee-black-700 hover:text-pewaukee-red-600 px-3 py-2 rounded-md font-semibold transition-all duration-300 flex items-center hover:shadow-md hover:scale-105 transform hover:bg-gray-50">
+                        <i class="bi bi-envelope mr-2 transition-transform duration-300 hover:rotate-12"></i>Contact
+                    </a>
+                </nav>
+                
+                <button class="md:hidden flex flex-col justify-center w-8 h-8 space-y-1" id="mobileMenuToggle">
+                    <span class="block w-full h-0.5 bg-pewaukee-red-700 transition-all"></span>
+                    <span class="block w-full h-0.5 bg-pewaukee-red-700 transition-all"></span>
+                    <span class="block w-full h-0.5 bg-pewaukee-red-700 transition-all"></span>
+                </button>
+            </div>
+            
+            <!-- Mobile menu -->
+            <div class="md:hidden hidden animate-slide-up" id="mobileMenu">
+                <div class="px-2 pt-2 pb-3 space-y-1 bg-white border-t">
+                    <a href="index.html" class="block text-pewaukee-red-700 bg-gray-100 px-3 py-2 rounded-md font-semibold flex items-center transition-all duration-300 hover:shadow-md">
+                        <i class="bi bi-house mr-2"></i>Home
+                    </a>
+                    <a href="about.html" class="block text-pewaukee-black-700 hover:text-pewaukee-red-600 px-3 py-2 rounded-md font-semibold flex items-center transition-all duration-300 hover:bg-gray-50 hover:shadow-md">
+                        <i class="bi bi-people mr-2"></i>About Us
+                    </a>
+                    <a href="rlc.html" class="block text-pewaukee-black-700 hover:text-pewaukee-red-600 px-3 py-2 rounded-md font-semibold flex items-center transition-all duration-300 hover:bg-gray-50 hover:shadow-md">
+                        <i class="bi bi-calendar-event mr-2"></i>RLC Conference
+                    </a>
+                    <a href="events.html" class="block text-pewaukee-black-700 hover:text-pewaukee-red-600 px-3 py-2 rounded-md font-semibold flex items-center transition-all duration-300 hover:bg-gray-50 hover:shadow-md">
+                        <i class="bi bi-calendar3 mr-2"></i>Events
+                    </a>
+                    <a href="resources.html" class="block text-pewaukee-black-700 hover:text-pewaukee-red-600 px-3 py-2 rounded-md font-semibold flex items-center transition-all duration-300 hover:bg-gray-50 hover:shadow-md">
+                        <i class="bi bi-book mr-2"></i>Resources
+                    </a>
+                    <a href="contact.html" class="block text-pewaukee-black-700 hover:text-pewaukee-red-600 px-3 py-2 rounded-md font-semibold flex items-center transition-all duration-300 hover:bg-gray-50 hover:shadow-md">
+                        <i class="bi bi-envelope mr-2"></i>Contact
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="relative bg-gradient-to-br from-pewaukee-red-700 to-pewaukee-red-600 text-white py-20 lg:py-28 overflow-hidden">
+            <div class="absolute inset-0 bg-black opacity-10"></div>
+            <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-4xl mx-auto">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 animate-fade-in">Empowering Future Business Leaders</h1>
+                    <p class="text-xl md:text-2xl mb-12 opacity-90 leading-relaxed animate-slide-up" style="animation-delay: 0.3s;">Join Pewaukee High School's FBLA Chapter and develop the skills, network, and confidence to succeed in business and leadership.</p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up" style="animation-delay: 0.6s;">
+                        <a href="about.html" class="inline-flex items-center px-8 py-4 bg-pewaukee-black-800 text-white font-semibold rounded-lg hover:bg-pewaukee-black-900 hover:shadow-xl hover:scale-105 transform transition-all duration-300 shadow-lg">
+                            <i class="bi bi-info-circle mr-2"></i>Learn More
+                        </a>
+                        <a href="rlc.html" class="inline-flex items-center px-8 py-4 bg-transparent border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-pewaukee-red-700 hover:shadow-xl hover:scale-105 transform transition-all duration-300">
+                            <i class="bi bi-calendar-event mr-2"></i>RLC Conference
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Quick Links -->
+        <section class="py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-center text-pewaukee-red-700 mb-16 animate-fade-in">Explore Our Chapter</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <a href="about.html" class="group bg-white rounded-2xl p-8 border-2 border-gray-200 hover:border-pewaukee-red-500 transform hover:-translate-y-2 transition-all duration-300 shadow-lg hover:shadow-xl animate-slide-up" style="animation-delay: 0.1s;">
+                        <div class="w-16 h-16 bg-gradient-to-br from-pewaukee-red-700 to-pewaukee-red-600 rounded-full flex items-center justify-center mb-6">
+                            <i class="bi bi-people text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-pewaukee-red-700 mb-4">About Us</h3>
+                        <p class="text-gray-600">Learn about our chapter's mission, history, and dedicated members.</p>
+                    </a>
+                    
+                    <a href="events.html" class="group bg-white rounded-2xl p-8 border-2 border-gray-200 hover:border-pewaukee-red-500 transform hover:-translate-y-2 transition-all duration-300 shadow-lg hover:shadow-xl animate-slide-up" style="animation-delay: 0.2s;">
+                        <div class="w-16 h-16 bg-gradient-to-br from-pewaukee-red-700 to-pewaukee-red-600 rounded-full flex items-center justify-center mb-6">
+                            <i class="bi bi-calendar-event text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-pewaukee-red-700 mb-4">Events</h3>
+                        <p class="text-gray-600">Stay updated on upcoming meetings, competitions, and leadership opportunities.</p>
+                    </a>
+                    
+                    <a href="resources.html" class="group bg-white rounded-2xl p-8 border-2 border-gray-200 hover:border-pewaukee-red-500 transform hover:-translate-y-2 transition-all duration-300 shadow-lg hover:shadow-xl animate-slide-up" style="animation-delay: 0.3s;">
+                        <div class="w-16 h-16 bg-gradient-to-br from-pewaukee-red-700 to-pewaukee-red-600 rounded-full flex items-center justify-center mb-6">
+                            <i class="bi bi-book text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-pewaukee-red-700 mb-4">Resources</h3>
+                        <p class="text-gray-600">Access study materials, competition guides, and helpful business resources.</p>
+                    </a>
+                    
+                    <a href="contact.html" class="group bg-white rounded-2xl p-8 border-2 border-gray-200 hover:border-pewaukee-red-500 transform hover:-translate-y-2 transition-all duration-300 shadow-lg hover:shadow-xl animate-slide-up" style="animation-delay: 0.4s;">
+                        <div class="w-16 h-16 bg-gradient-to-br from-pewaukee-red-700 to-pewaukee-red-600 rounded-full flex items-center justify-center mb-6">
+                            <i class="bi bi-envelope text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-pewaukee-red-700 mb-4">Contact</h3>
+                        <p class="text-gray-600">Get in touch with our advisors or connect with us on social media.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-pewaukee-black-800 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center space-y-6">
+                <!-- Logo and Title -->
+                <div class="flex justify-center items-center space-x-3">
+                    <img src="https://static.wixstatic.com/media/7c32ee_322121c9ac8c4974a9f78e7ca0e20d13~mv2.png/v1/fit/w_2500,h_1330,al_c/7c32ee_322121c9ac8c4974a9f78e7ca0e20d13~mv2.png" alt="Pewaukee High School Logo" class="h-8 w-8 object-contain">
+                    <div class="text-left">
+                        <h3 class="text-lg font-bold text-white">Pewaukee FBLA</h3>
+                        <p class="text-gray-300 text-xs">Future Business Leaders of America</p>
+                    </div>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="flex flex-col sm:flex-row justify-center items-center space-y-2 sm:space-y-0 sm:space-x-6 text-gray-300 text-sm">
+                    <div class="flex items-center space-x-1">
+                        <i class="bi bi-geo-alt text-pewaukee-red-400"></i>
+                        <span>Pewaukee High School</span>
+                    </div>
+                    <div class="flex items-center space-x-1">
+                        <i class="bi bi-envelope text-pewaukee-red-400"></i>
+                        <span>prelsha@pewaukeeschools.org</span>
+                    </div>
+                    <a href="https://www.instagram.com/pewaukee.fbla/" target="_blank" class="flex items-center space-x-1 hover:text-pewaukee-red-400 transition-colors">
+                        <i class="bi bi-instagram text-pewaukee-red-400"></i>
+                        <span>@pewaukee.fbla</span>
+                    </a>
+                </div>
+                
+                <!-- Credit -->
+                <div class="border-t border-gray-600 pt-4">
+                    <p class="text-gray-400 text-xs">Website created by <span class="text-pewaukee-red-400 font-semibold">Ayham Issa</span> for Pewaukee FBLA Chapter</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div> <!-- End of mainContent -->
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    
+    <!-- Loading Screen Script -->
+    <script>
+        // Loading Screen Functionality
+        window.addEventListener('load', function() {
+            const loadingScreen = document.getElementById('loadingScreen');
+            const mainContent = document.getElementById('mainContent');
+            
+            // Minimum loading time of 1 second for effect
+            setTimeout(() => {
+                // Fade out loading screen
+                loadingScreen.classList.add('animate-fade-out');
+                
+                // Show main content
+                setTimeout(() => {
+                    loadingScreen.style.display = 'none';
+                    mainContent.classList.remove('opacity-0');
+                    mainContent.classList.add('animate-fade-in');
+                }, 500); // Wait for fade out animation to complete
+                
+            }, 1000); // 1 second minimum loading time
+        });
+        
+        // Prevent flash of unstyled content
+        document.addEventListener('DOMContentLoaded', function() {
+            // Ensure loading screen is visible immediately
+            document.getElementById('loadingScreen').style.display = 'flex';
+        });
+    </script>
+</body>
+</html>
