@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="RLC Conference Region 7 hosted by Pewaukee High School FBLA. Join us February 7th at 8 AM CST for workshops and competitive events.">
+    <meta name="keywords" content="RLC Conference, FBLA Region 7, Pewaukee FBLA, Regional Leadership Conference, Business Competition">
+    <title>RLC Conference - Pewaukee High School FBLA</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://static.wixstatic.com/media/7c32ee_322121c9ac8c4974a9f78e7ca0e20d13~mv2.png/v1/fit/w_2500,h_1330,al_c/7c32ee_322121c9ac8c4974a9f78e7ca0e20d13~mv2.png">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'pewaukee-red': {
+                            50: '#fef2f2',
+                            100: '#fee2e2',
+                            200: '#fecaca',
+                            300: '#fca5a5',
+                            400: '#f87171',
+                            500: '#ef4444',
+                            600: '#dc2626',
+                            700: '#b91c1c',
+                            800: '#991b1b',
+                            900: '#7f1d1d'
+                        },
+                        'pewaukee-black': {
+                            50: '#f8f8f8',
+                            100: '#e5e5e5',
+                            200: '#cccccc',
+                            300: '#999999',
+                            400: '#666666',
+                            500: '#333333',
+                            600: '#1a1a1a',
+                            700: '#0d0d0d',
+                            800: '#050505',
+                            900: '#000000'
+                        }
+                    },
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif']
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.8s ease-out',
+                        'slide-up': 'slideUp 0.8s ease-out',
+                        'slide-in-left': 'slideInLeft 0.8s ease-out',
+                        'slide-in-right': 'slideInRight 0.8s ease-out',
+                        'bounce-in': 'bounceIn 0.6s ease-out',
+                        'pulse-slow': 'pulse 3s infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'glow': 'glow 2s ease-in-out infinite alternate'
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' }
+                        },
+                        slideUp: {
+                            '0%': { opacity: '0', transform: 'translateY(30px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' }
+                        },
+                        slideInLeft: {
+                            '0%': { opacity: '0', transform: 'translateX(-30px)' },
+                            '100%': { opacity: '1', transform: 'translateX(0)' }
+                        },
+                        slideInRight: {
+                            '0%': { opacity: '0', transform: 'translateX(30px)' },
+                            '100%': { opacity: '1', transform: 'translateX(0)' }
+                        },
+                        bounceIn: {
+                            '0%': { opacity: '0', transform: 'scale(0.3)' },
+                            '50%': { transform: 'scale(1.05)' },
+                            '70%': { transform: 'scale(0.9)' },
+                            '100%': { opacity: '1', transform: 'scale(1)' }
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-10px)' }
+                        },
+                        glow: {
+                            'from': { 'box-shadow': '0 0 20px rgba(185, 28, 28, 0.5)' },
+                            'to': { 'box-shadow': '0 0 30px rgba(185, 28, 28, 0.8), 0 0 40px rgba(185, 28, 28, 0.6)' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body class="min-h-screen flex flex-col">
+    <!-- Header -->
+    <header class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="flex justify-between items-center py-3 md:py-4">
+                <div class="flex items-center space-x-3 md:space-x-4">
+                    <img src="https://static.wixstatic.com/media/7c32ee_322121c9ac8c4974a9f78e7ca0e20d13~mv2.png/v1/fit/w_2500,h_1330,al_c/7c32ee_322121c9ac8c4974a9f78e7ca0e20d13~mv2.png" alt="Pewaukee High School Logo" class="h-10 w-10 md:h-12 md:w-12 object-contain flex-shrink-0">
+                    <div class="min-w-0">
+                        <h1 class="text-lg md:text-xl font-bold text-pewaukee-red-700 truncate">Pewaukee FBLA</h1>
+                        <span class="text-xs md:text-sm text-gray-600 hidden sm:block">Future Business Leaders of America</span>
+                    </div>
+                </div>
+                
+                <nav class="hidden md:flex space-x-8" id="navigation">
+                    <a href="index.html" class="text-pewaukee-black-700 hover:text-pewaukee-red-600 px-3 py-2 rounded-md font-semibold transition-all duration-300 flex items-center hover:shadow-md hover:scale-105 transform hover:bg-gray-50">
+                        <i class="bi bi-house mr-2 transition-transform duration-300 hover:rotate-12"></i>Home
+                    </a>
+                    <a href="about.html" class="text-pewaukee-black-700 hover:text-pewaukee-red-600 px-3 py-2 rounded-md font-semibold transition-all duration-300 flex items-center hover:shadow-md hover:scale-105 transform hover:bg-gray-50">
+                        <i class="bi bi-people mr-2 transition-transform duration-300 hover:rotate-12"></i>About Us
+                    </a>
+                    <a href="rlc.html" class="text-pewaukee-red-700 bg-gray-100 hover:text-pewaukee-black-800 px-3 py-2 rounded-md font-semibold transition-all duration-300 flex items-center hover:shadow-md hover:scale-105 transform">
+                        <i class="bi bi-calendar-event mr-2 transition-transform duration-300 hover:rotate-12"></i>RLC Conference
+                    </a>
+                    <a href="volunteer.html" class="text-pewaukee-black-700 hover:text-pewaukee-red-600 px-3 py-2 rounded-md font-semibold transition-all duration-300 flex items-center hover:shadow-md hover:scale-105 transform hover:bg-gray-50">
+                        <i class="bi bi-hand-thumbs-up mr-2 transition-transform duration-300 hover:rotate-12"></i>Volunteer
+                    </a>
+                    <a href="contact.html" class="text-pewaukee-black-700 hover:text-pewaukee-red-600 px-3 py-2 rounded-md font-semibold transition-all duration-300 flex items-center hover:shadow-md hover:scale-105 transform hover:bg-gray-50">
+                        <i class="bi bi-envelope mr-2 transition-transform duration-300 hover:rotate-12"></i>Contact
+                    </a>
+                </nav>
+                
+                <button class="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-pewaukee-red-500 focus:ring-opacity-50" id="mobileMenuToggle">
+                    <div class="w-6 h-6 flex flex-col justify-center space-y-1.5">
+                        <span class="block w-full h-0.5 bg-pewaukee-red-700 transition-all duration-300 ease-in-out transform origin-center"></span>
+                        <span class="block w-full h-0.5 bg-pewaukee-red-700 transition-all duration-300 ease-in-out"></span>
+                        <span class="block w-full h-0.5 bg-pewaukee-red-700 transition-all duration-300 ease-in-out transform origin-center"></span>
+                    </div>
+                </button>
+            </div>
+            
+            <!-- Mobile menu -->
+            <div class="md:hidden absolute left-0 right-0 top-full bg-white shadow-lg border-t transform transition-all duration-300 ease-in-out opacity-0 -translate-y-2 pointer-events-none" id="mobileMenu">
+                <div class="px-4 py-3 space-y-1 max-h-screen overflow-y-auto">
+                    <a href="index.html" class="block text-pewaukee-black-700 hover:text-pewaukee-red-600 hover:bg-gray-50 px-4 py-3 rounded-lg font-semibold flex items-center transition-all duration-200">
+                        <i class="bi bi-house mr-3 text-lg"></i>Home
+                    </a>
+                    <a href="about.html" class="block text-pewaukee-black-700 hover:text-pewaukee-red-600 hover:bg-gray-50 px-4 py-3 rounded-lg font-semibold flex items-center transition-all duration-200">
+                        <i class="bi bi-people mr-3 text-lg"></i>About Us
+                    </a>
+                    <a href="rlc.html" class="block text-pewaukee-red-700 bg-pewaukee-red-50 px-4 py-3 rounded-lg font-semibold flex items-center transition-all duration-200 shadow-sm">
+                        <i class="bi bi-calendar-event mr-3 text-lg"></i>RLC Conference
+                    </a>
+                    <a href="volunteer.html" class="block text-pewaukee-black-700 hover:text-pewaukee-red-600 hover:bg-gray-50 px-4 py-3 rounded-lg font-semibold flex items-center transition-all duration-200">
+                        <i class="bi bi-hand-thumbs-up mr-3 text-lg"></i>Volunteer
+                    </a>
+                    <a href="contact.html" class="block text-pewaukee-black-700 hover:text-pewaukee-red-600 hover:bg-gray-50 px-4 py-3 rounded-lg font-semibold flex items-center transition-all duration-200">
+                        <i class="bi bi-envelope mr-3 text-lg"></i>Contact
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow">
+        <!-- Hero Section -->
+        <section class="relative bg-gradient-to-br from-pewaukee-red-700 to-pewaukee-red-600 text-white py-16 sm:py-20 lg:py-24">
+            <div class="absolute inset-0 bg-black opacity-10"></div>
+            <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-4xl mx-auto">
+                    <div class="inline-flex items-center justify-center px-6 py-3 bg-white bg-opacity-20 rounded-full text-white font-semibold mb-6 animate-bounce-in">
+                        <i class="bi bi-award-fill mr-2 text-white"></i>
+                        <span>Region 7 Host</span>
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 animate-fade-in leading-tight">RLC Conference 2025</h1>
+                    <p class="text-xl sm:text-2xl mb-8 opacity-90 leading-relaxed animate-slide-up" style="animation-delay: 0.3s;">
+                        Join us for the Regional Leadership Conference hosted by Pewaukee High School FBLA
+                    </p>
+                    
+                    <!-- Date and Time Banner -->
+                    <div class="bg-white bg-opacity-20 backdrop-blur-sm rounded-2xl p-6 sm:p-8 mt-8 animate-slide-up" style="animation-delay: 0.5s;">
+                        <div class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-8">
+                            <div class="flex items-center space-x-3">
+                                <i class="bi bi-calendar-event text-3xl text-white"></i>
+                                <div class="text-left">
+                                    <p class="text-lg font-semibold">Date</p>
+                                    <p class="text-2xl font-bold">February 7th, 2025</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="bi bi-clock text-3xl text-white"></i>
+                                <div class="text-left">
+                                    <p class="text-lg font-semibold">Time</p>
+                                    <p class="text-2xl font-bold">8:00 AM CST</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="bi bi-geo-alt text-3xl text-white"></i>
+                                <div class="text-left">
+                                    <p class="text-lg font-semibold">Location</p>
+                                    <p class="text-2xl font-bold">Pewaukee High School</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conference Overview -->
+        <section class="py-16 sm:py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-pewaukee-red-700 mb-6 animate-fade-in">Welcome to RLC Region 7</h2>
+                    <p class="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed animate-slide-up">
+                        We are proud to host the Regional Leadership Conference for FBLA Region 7. This premier event brings together 
+                        the brightest future business leaders from across our region for competition, learning, and networking.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8 mb-16">
+                    <div class="bg-white rounded-xl p-8 shadow-lg text-center animate-slide-up" style="animation-delay: 0.1s;">
+                        <div class="w-16 h-16 bg-pewaukee-red-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="bi bi-trophy text-pewaukee-red-700 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-pewaukee-red-700 mb-4">Competitive Events</h3>
+                        <p class="text-gray-600">Students compete in over 25 different business-related events, showcasing their skills and knowledge.</p>
+                    </div>
+
+                    <div class="bg-white rounded-xl p-8 shadow-lg text-center animate-slide-up" style="animation-delay: 0.2s;">
+                        <div class="w-16 h-16 bg-pewaukee-red-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="bi bi-people text-pewaukee-red-700 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-pewaukee-red-700 mb-4">Leadership Development</h3>
+                        <p class="text-gray-600">Workshops and sessions designed to develop the next generation of business leaders.</p>
+                    </div>
+
+                    <div class="bg-white rounded-xl p-8 shadow-lg text-center animate-slide-up" style="animation-delay: 0.3s;">
+                        <div class="w-16 h-16 bg-pewaukee-red-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="bi bi-people-fill text-pewaukee-red-700 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-pewaukee-red-700 mb-4">Networking</h3>
+                        <p class="text-gray-600">Connect with peers, advisors, and business professionals from across the region.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Workshops Section -->
+        <section class="py-16 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-pewaukee-red-700 mb-6 animate-fade-in">Conference Workshops</h2>
+                    <p class="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed animate-slide-up">
+                        Our carefully curated workshops are designed to enhance leadership skills, business acumen, and professional development 
+                        for all attendees. Each session is led by industry experts and experienced educators.
+                    </p>
+                </div>
+
+                <div class="grid lg:grid-cols-2 gap-8">
+                    <!-- Leadership Workshops -->
+                    <div class="bg-white rounded-xl p-8 shadow-lg animate-slide-in-left">
+                        <div class="flex items-center mb-6">
+                            <div class="w-12 h-12 bg-pewaukee-red-100 rounded-lg flex items-center justify-center mr-4">
+                                <i class="bi bi-person-check text-pewaukee-red-700 text-xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-pewaukee-red-700">Leadership Development</h3>
+                        </div>
+                        <ul class="space-y-4">
+                            <li class="flex items-start space-x-3">
+                                <i class="bi bi-check-circle-fill text-green-600 mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">Professional LinkedIn Headshots</h4>
+                                    <p class="text-gray-600 text-sm">Get professional headshots taken for your LinkedIn profile</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <i class="bi bi-check-circle-fill text-green-600 mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">Cookie Decorating Workshop</h4>
+                                    <p class="text-gray-600 text-sm">Learn creative cookie decorating techniques and team building</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <i class="bi bi-check-circle-fill text-green-600 mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">Public Speaking Workshop</h4>
+                                    <p class="text-gray-600 text-sm">Practice presentation skills and overcome speaking anxiety</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <i class="bi bi-check-circle-fill text-green-600 mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">Leadership Games & Activities</h4>
+                                    <p class="text-gray-600 text-sm">Interactive team-building exercises and leadership challenges</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Business Skills Workshops -->
+                    <div class="bg-white rounded-xl p-8 shadow-lg animate-slide-in-right">
+                        <div class="flex items-center mb-6">
+                            <div class="w-12 h-12 bg-pewaukee-red-100 rounded-lg flex items-center justify-center mr-4">
+                                <i class="bi bi-briefcase text-pewaukee-red-700 text-xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-pewaukee-red-700">Business Skills</h3>
+                        </div>
+                        <ul class="space-y-4">
+                            <li class="flex items-start space-x-3">
+                                <i class="bi bi-check-circle-fill text-green-600 mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">Business Card Design</h4>
+                                    <p class="text-gray-600 text-sm">Create professional business cards using design software</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <i class="bi bi-check-circle-fill text-green-600 mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">Personal Finance Basics</h4>
+                                    <p class="text-gray-600 text-sm">Learn budgeting, saving, and managing personal finances</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <i class="bi bi-check-circle-fill text-green-600 mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">Mock Job Interviews</h4>
+                                    <p class="text-gray-600 text-sm">Practice interviewing skills with local business professionals</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <i class="bi bi-check-circle-fill text-green-600 mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">Social Media for Business</h4>
+                                    <p class="text-gray-600 text-sm">Learn how to use social media professionally and effectively</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Technology Workshops -->
+                    <div class="bg-white rounded-xl p-8 shadow-lg animate-slide-in-left" style="animation-delay: 0.2s;">
+                        <div class="flex items-center mb-6">
+                            <div class="w-12 h-12 bg-pewaukee-red-100 rounded-lg flex items-center justify-center mr-4">
+                                <i class="bi bi-laptop text-pewaukee-red-700 text-xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-pewaukee-red-700">Technology & Innovation</h3>
+                        </div>
+                        <ul class="space-y-4">
+                            <li class="flex items-start space-x-3">
+                                <i class="bi bi-check-circle-fill text-green-600 mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">Excel for Business</h4>
+                                    <p class="text-gray-600 text-sm">Learn essential Excel skills for data analysis and presentations</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <i class="bi bi-check-circle-fill text-green-600 mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">PowerPoint Presentation Skills</h4>
+                                    <p class="text-gray-600 text-sm">Create engaging and professional presentations</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <i class="bi bi-check-circle-fill text-green-600 mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">Google Workspace Tools</h4>
+                                    <p class="text-gray-600 text-sm">Master Google Docs, Sheets, and collaborative tools</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <i class="bi bi-check-circle-fill text-green-600 mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">Digital Portfolio Creation</h4>
+                                    <p class="text-gray-600 text-sm">Build an online portfolio to showcase your skills and projects</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Career Preparation -->
+                    <div class="bg-white rounded-xl p-8 shadow-lg animate-slide-in-right" style="animation-delay: 0.2s;">
+                        <div class="flex items-center mb-6">
+                            <div class="w-12 h-12 bg-pewaukee-red-100 rounded-lg flex items-center justify-center mr-4">
+                                <i class="bi bi-person-workspace text-pewaukee-red-700 text-xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-pewaukee-red-700">Career Preparation</h3>
+                        </div>
+                        <ul class="space-y-4">
+                            <li class="flex items-start space-x-3">
+                                <i class="bi bi-check-circle-fill text-green-600 mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">Resume Writing Workshop</h4>
+                                    <p class="text-gray-600 text-sm">Create a professional resume with personalized feedback</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <i class="bi bi-check-circle-fill text-green-600 mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">College Application Tips</h4>
+                                    <p class="text-gray-600 text-sm">Get guidance on college applications and scholarship opportunities</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <i class="bi bi-check-circle-fill text-green-600 mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">Networking & Communication</h4>
+                                    <p class="text-gray-600 text-sm">Learn how to network effectively and communicate professionally</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <i class="bi bi-check-circle-fill text-green-600 mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">Business Etiquette & Dress</h4>
+                                    <p class="text-gray-600 text-sm">Master professional dress codes and business etiquette</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="py-16 bg-pewaukee-red-700 text-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-6 animate-fade-in">Ready to Join Us?</h2>
+                <p class="text-xl mb-8 opacity-90 max-w-3xl mx-auto animate-slide-up">
+                    Don't miss this opportunity to compete, learn, and network with the best future business leaders in Region 7. 
+                    Mark your calendars and prepare for an unforgettable experience!
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6">
+                    <a href="contact.html" class="inline-flex items-center justify-center px-8 py-4 bg-white text-pewaukee-red-700 font-semibold rounded-lg hover:bg-gray-100 hover:shadow-xl hover:scale-105 transform transition-all duration-300 text-lg">
+                        <i class="bi bi-envelope mr-3"></i>
+                        Contact for More Info
+                    </a>
+                    <a href="volunteer.html" class="inline-flex items-center justify-center px-8 py-4 bg-transparent border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-pewaukee-red-700 hover:shadow-xl hover:scale-105 transform transition-all duration-300 text-lg">
+                        <i class="bi bi-hand-thumbs-up mr-3"></i>
+                        Volunteer to Judge
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-pewaukee-black-800 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center space-y-6">
+                <!-- Logo and Title -->
+                <div class="flex justify-center items-center space-x-3">
+                    <img src="https://static.wixstatic.com/media/7c32ee_322121c9ac8c4974a9f78e7ca0e20d13~mv2.png/v1/fit/w_2500,h_1330,al_c/7c32ee_322121c9ac8c4974a9f78e7ca0e20d13~mv2.png" alt="Pewaukee High School Logo" class="h-8 w-8 object-contain">
+                    <div class="text-left">
+                        <h3 class="text-lg font-bold text-white">Pewaukee FBLA</h3>
+                        <p class="text-gray-300 text-xs">Future Business Leaders of America</p>
+                    </div>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="flex flex-col sm:flex-row justify-center items-center space-y-2 sm:space-y-0 sm:space-x-6 text-gray-300 text-sm">
+                    <div class="flex items-center space-x-1">
+                        <i class="bi bi-geo-alt text-pewaukee-red-400"></i>
+                        <span>Pewaukee High School</span>
+                    </div>
+                    <div class="flex items-center space-x-1">
+                        <i class="bi bi-envelope text-pewaukee-red-400"></i>
+                        <span>prelsha@pewaukeeschools.org</span>
+                    </div>
+                    <a href="https://www.instagram.com/pewaukee.fbla/" target="_blank" class="flex items-center space-x-1 hover:text-pewaukee-red-400 transition-colors">
+                        <i class="bi bi-instagram text-pewaukee-red-400"></i>
+                        <span>@pewaukee.fbla</span>
+                    </a>
+                </div>
+                
+                <!-- Credit -->
+                <div class="border-t border-gray-600 pt-4">
+                    <p class="text-gray-400 text-xs">Website created by <span class="text-pewaukee-red-400 font-semibold">Ayham Issa</span> for Pewaukee FBLA Chapter</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Menu Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+            const mobileMenu = document.getElementById('mobileMenu');
+            
+            if (mobileMenuToggle && mobileMenu) {
+                mobileMenuToggle.addEventListener('click', function() {
+                    // Toggle menu visibility
+                    const isHidden = mobileMenu.classList.contains('opacity-0');
+                    
+                    if (isHidden) {
+                        // Show menu
+                        mobileMenu.classList.remove('opacity-0', '-translate-y-2', 'pointer-events-none');
+                        mobileMenu.classList.add('opacity-100', 'translate-y-0', 'pointer-events-auto');
+                    } else {
+                        // Hide menu
+                        mobileMenu.classList.add('opacity-0', '-translate-y-2', 'pointer-events-none');
+                        mobileMenu.classList.remove('opacity-100', 'translate-y-0', 'pointer-events-auto');
+                    }
+                    
+                    // Animate hamburger icon
+                    const spans = mobileMenuToggle.querySelectorAll('span');
+                    const container = mobileMenuToggle.querySelector('div');
+                    
+                    if (isHidden) {
+                        // Menu is opening - transform to X
+                        spans[0].style.transform = 'rotate(45deg) translateY(2px)';
+                        spans[1].style.opacity = '0';
+                        spans[1].style.transform = 'scale(0)';
+                        spans[2].style.transform = 'rotate(-45deg) translateY(-2px)';
+                        container.classList.remove('space-y-1.5');
+                    } else {
+                        // Menu is closing - transform back to hamburger
+                        spans[0].style.transform = 'rotate(0) translateY(0)';
+                        spans[1].style.opacity = '1';
+                        spans[1].style.transform = 'scale(1)';
+                        spans[2].style.transform = 'rotate(0) translateY(0)';
+                        container.classList.add('space-y-1.5');
+                    }
+                });
+                
+                // Function to close menu
+                function closeMenu() {
+                    mobileMenu.classList.add('opacity-0', '-translate-y-2', 'pointer-events-none');
+                    mobileMenu.classList.remove('opacity-100', 'translate-y-0', 'pointer-events-auto');
+                    // Reset hamburger icon
+                    const spans = mobileMenuToggle.querySelectorAll('span');
+                    const container = mobileMenuToggle.querySelector('div');
+                    spans[0].style.transform = 'rotate(0) translateY(0)';
+                    spans[1].style.opacity = '1';
+                    spans[1].style.transform = 'scale(1)';
+                    spans[2].style.transform = 'rotate(0) translateY(0)';
+                    container.classList.add('space-y-1.5');
+                }
+                
+                // Close menu when clicking on a link
+                const mobileLinks = mobileMenu.querySelectorAll('a');
+                mobileLinks.forEach(link => {
+                    link.addEventListener('click', closeMenu);
+                });
+                
+                // Close menu when clicking outside
+                document.addEventListener('click', function(event) {
+                    if (!mobileMenuToggle.contains(event.target) && !mobileMenu.contains(event.target)) {
+                        closeMenu();
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>

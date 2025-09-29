@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Volunteer to judge at Pewaukee High School FBLA competitions. Help support future business leaders by sharing your expertise as a judge.">
+    <meta name="keywords" content="FBLA Volunteer, FBLA Judge, Pewaukee FBLA Volunteer, Business Competition Judge, FBLA Events">
+    <title>Volunteer to Judge - Pewaukee High School FBLA</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://static.wixstatic.com/media/7c32ee_322121c9ac8c4974a9f78e7ca0e20d13~mv2.png/v1/fit/w_2500,h_1330,al_c/7c32ee_322121c9ac8c4974a9f78e7ca0e20d13~mv2.png">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'pewaukee-red': {
+                            50: '#fef2f2',
+                            100: '#fee2e2',
+                            200: '#fecaca',
+                            300: '#fca5a5',
+                            400: '#f87171',
+                            500: '#ef4444',
+                            600: '#dc2626',
+                            700: '#b91c1c',
+                            800: '#991b1b',
+                            900: '#7f1d1d'
+                        },
+                        'pewaukee-black': {
+                            50: '#f8f8f8',
+                            100: '#e5e5e5',
+                            200: '#cccccc',
+                            300: '#999999',
+                            400: '#666666',
+                            500: '#333333',
+                            600: '#1a1a1a',
+                            700: '#0d0d0d',
+                            800: '#050505',
+                            900: '#000000'
+                        }
+                    },
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif']
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.8s ease-out',
+                        'slide-up': 'slideUp 0.8s ease-out',
+                        'slide-in-left': 'slideInLeft 0.8s ease-out',
+                        'slide-in-right': 'slideInRight 0.8s ease-out',
+                        'bounce-in': 'bounceIn 0.6s ease-out',
+                        'pulse-slow': 'pulse 3s infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'glow': 'glow 2s ease-in-out infinite alternate',
+                        'spin-slow': 'spin 3s linear infinite',
+                        'scale-pulse': 'scalePulse 2s ease-in-out infinite',
+                        'fade-out': 'fadeOut 0.8s ease-out',
+                        'logo-bounce': 'logoBounce 1.5s ease-out',
+                        'loading-dots': 'loadingDots 1.5s infinite'
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' }
+                        },
+                        slideUp: {
+                            '0%': { opacity: '0', transform: 'translateY(30px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' }
+                        },
+                        slideInLeft: {
+                            '0%': { opacity: '0', transform: 'translateX(-30px)' },
+                            '100%': { opacity: '1', transform: 'translateX(0)' }
+                        },
+                        slideInRight: {
+                            '0%': { opacity: '0', transform: 'translateX(30px)' },
+                            '100%': { opacity: '1', transform: 'translateX(0)' }
+                        },
+                        bounceIn: {
+                            '0%': { opacity: '0', transform: 'scale(0.3)' },
+                            '50%': { transform: 'scale(1.05)' },
+                            '70%': { transform: 'scale(0.9)' },
+                            '100%': { opacity: '1', transform: 'scale(1)' }
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-10px)' }
+                        },
+                        glow: {
+                            'from': { 'box-shadow': '0 0 20px rgba(185, 28, 28, 0.5)' },
+                            'to': { 'box-shadow': '0 0 30px rgba(185, 28, 28, 0.8), 0 0 40px rgba(185, 28, 28, 0.6)' }
+                        },
+                        scalePulse: {
+                            '0%, 100%': { transform: 'scale(1)' },
+                            '50%': { transform: 'scale(1.1)' }
+                        },
+                        fadeOut: {
+                            '0%': { opacity: '1' },
+                            '100%': { opacity: '0', visibility: 'hidden' }
+                        },
+                        logoBounce: {
+                            '0%': { transform: 'scale(0) rotate(0deg)' },
+                            '50%': { transform: 'scale(1.2) rotate(180deg)' },
+                            '100%': { transform: 'scale(1) rotate(360deg)' }
+                        },
+                        loadingDots: {
+                            '0%, 20%': { transform: 'scale(1)' },
+                            '50%': { transform: 'scale(1.5)' },
+                            '80%, 100%': { transform: 'scale(1)' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+        <!-- Bootstrap Icons -->
+        <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    
+    <!-- Confetti JS -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    
+    <!-- Custom CSS -->
+    <style>
+        /* Custom red checkbox styling */
+        input[type="checkbox"] {
+            accent-color: #b91c1c;
+        }
+    </style>
+</head>
+    
+    <!-- Confetti JS -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    
+    <!-- Custom CSS -->
+    <style>
+        /* Custom red checkbox styling */
+        input[type="checkbox"] {
+            accent-color: #b91c1c;
+        }
+    </style>
+</head>
+    
+    <!-- Confetti JS -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body class="min-h-screen flex flex-col">
+    <!-- Header -->
+    <header class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="flex justify-between items-center py-3 md:py-4">
+                <div class="flex items-center space-x-3 md:space-x-4">
+                    <img src="https://static.wixstatic.com/media/7c32ee_322121c9ac8c4974a9f78e7ca0e20d13~mv2.png/v1/fit/w_2500,h_1330,al_c/7c32ee_322121c9ac8c4974a9f78e7ca0e20d13~mv2.png" alt="Pewaukee High School Logo" class="h-10 w-10 md:h-12 md:w-12 object-contain flex-shrink-0">
+                    <div class="min-w-0">
+                        <h1 class="text-lg md:text-xl font-bold text-pewaukee-red-700 truncate">Pewaukee FBLA</h1>
+                        <span class="text-xs md:text-sm text-gray-600 hidden sm:block">Future Business Leaders of America</span>
+                    </div>
+                </div>
+                
+                <nav class="hidden md:flex space-x-8" id="navigation">
+                    <a href="index.html" class="text-pewaukee-black-700 hover:text-pewaukee-red-600 px-3 py-2 rounded-md font-semibold transition-all duration-300 flex items-center hover:shadow-md hover:scale-105 transform hover:bg-gray-50">
+                        <i class="bi bi-house mr-2 transition-transform duration-300 hover:rotate-12"></i>Home
+                    </a>
+                    <a href="about.html" class="text-pewaukee-black-700 hover:text-pewaukee-red-600 px-3 py-2 rounded-md font-semibold transition-all duration-300 flex items-center hover:shadow-md hover:scale-105 transform hover:bg-gray-50">
+                        <i class="bi bi-people mr-2 transition-transform duration-300 hover:rotate-12"></i>About Us
+                    </a>
+                    <a href="rlc.html" class="text-pewaukee-black-700 hover:text-pewaukee-red-600 px-3 py-2 rounded-md font-semibold transition-all duration-300 flex items-center hover:shadow-md hover:scale-105 transform hover:bg-gray-50">
+                        <i class="bi bi-calendar-event mr-2 transition-transform duration-300 hover:rotate-12"></i>RLC Conference
+                    </a>
+                    <a href="volunteer.html" class="text-pewaukee-red-700 bg-gray-100 hover:text-pewaukee-black-800 px-3 py-2 rounded-md font-semibold transition-all duration-300 flex items-center hover:shadow-md hover:scale-105 transform">
+                        <i class="bi bi-hand-thumbs-up mr-2 transition-transform duration-300 hover:rotate-12"></i>Volunteer
+                    </a>
+                    <a href="contact.html" class="text-pewaukee-black-700 hover:text-pewaukee-red-600 px-3 py-2 rounded-md font-semibold transition-all duration-300 flex items-center hover:shadow-md hover:scale-105 transform hover:bg-gray-50">
+                        <i class="bi bi-envelope mr-2 transition-transform duration-300 hover:rotate-12"></i>Contact
+                    </a>
+                </nav>
+                
+                <button class="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-pewaukee-red-500 focus:ring-opacity-50" id="mobileMenuToggle">
+                    <div class="w-6 h-6 flex flex-col justify-center space-y-1.5">
+                        <span class="block w-full h-0.5 bg-pewaukee-red-700 transition-all duration-300 ease-in-out transform origin-center"></span>
+                        <span class="block w-full h-0.5 bg-pewaukee-red-700 transition-all duration-300 ease-in-out"></span>
+                        <span class="block w-full h-0.5 bg-pewaukee-red-700 transition-all duration-300 ease-in-out transform origin-center"></span>
+                    </div>
+                </button>
+            </div>
+            
+            <!-- Mobile menu -->
+            <div class="md:hidden absolute left-0 right-0 top-full bg-white shadow-lg border-t transform transition-all duration-300 ease-in-out opacity-0 -translate-y-2 pointer-events-none" id="mobileMenu">
+                <div class="px-4 py-3 space-y-1 max-h-screen overflow-y-auto">
+                    <a href="index.html" class="block text-pewaukee-black-700 hover:text-pewaukee-red-600 hover:bg-gray-50 px-4 py-3 rounded-lg font-semibold flex items-center transition-all duration-200">
+                        <i class="bi bi-house mr-3 text-lg"></i>Home
+                    </a>
+                    <a href="about.html" class="block text-pewaukee-black-700 hover:text-pewaukee-red-600 hover:bg-gray-50 px-4 py-3 rounded-lg font-semibold flex items-center transition-all duration-200">
+                        <i class="bi bi-people mr-3 text-lg"></i>About Us
+                    </a>
+                    <a href="rlc.html" class="block text-pewaukee-black-700 hover:text-pewaukee-red-600 hover:bg-gray-50 px-4 py-3 rounded-lg font-semibold flex items-center transition-all duration-200">
+                        <i class="bi bi-calendar-event mr-3 text-lg"></i>RLC Conference
+                    </a>
+                    <a href="volunteer.html" class="block text-pewaukee-red-700 bg-pewaukee-red-50 px-4 py-3 rounded-lg font-semibold flex items-center transition-all duration-200 shadow-sm">
+                        <i class="bi bi-hand-thumbs-up mr-3 text-lg"></i>Volunteer
+                    </a>
+                    <a href="contact.html" class="block text-pewaukee-black-700 hover:text-pewaukee-red-600 hover:bg-gray-50 px-4 py-3 rounded-lg font-semibold flex items-center transition-all duration-200">
+                        <i class="bi bi-envelope mr-3 text-lg"></i>Contact
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow">
+        <!-- Hero Section -->
+        <section class="relative bg-gradient-to-br from-pewaukee-red-700 to-pewaukee-red-600 text-white py-16 sm:py-20 lg:py-24">
+            <div class="absolute inset-0 bg-black opacity-10"></div>
+            <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-4xl mx-auto">
+                    <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 animate-fade-in leading-tight">Volunteer to Judge</h1>
+                    <p class="text-xl sm:text-2xl mb-8 opacity-90 leading-relaxed animate-slide-up" style="animation-delay: 0.3s;">
+                        Share your expertise and support the next generation of business leaders by volunteering as a judge for our FBLA competitions.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Volunteer Form Section -->
+        <section class="py-16 sm:py-20">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-pewaukee-red-700 mb-6 animate-fade-in">Join Our Judge Panel</h2>
+                    <p class="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed animate-slide-up">
+                        We need experienced professionals to help evaluate our students' presentations and projects. 
+                        Your expertise will help shape the future of these aspiring business leaders.
+                    </p>
+                </div>
+
+                <!-- Form -->
+                <div class="bg-white rounded-2xl p-8 sm:p-12 shadow-xl animate-slide-up">
+                    <form id="volunteerForm" class="space-y-8">
+                        <!-- Personal Information -->
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="name" class="block text-sm font-semibold text-pewaukee-red-700 mb-2">
+                                    Full Name *
+                                </label>
+                                <input type="text" id="name" name="name" required 
+                                       class="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-pewaukee-red-500 focus:outline-none transition-colors duration-200">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-semibold text-pewaukee-red-700 mb-2">
+                                    Email Address *
+                                </label>
+                                <input type="email" id="email" name="email" required 
+                                       class="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-pewaukee-red-500 focus:outline-none transition-colors duration-200">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="profession" class="block text-sm font-semibold text-pewaukee-red-700 mb-2">
+                                Profession/Job Title *
+                            </label>
+                            <input type="text" id="profession" name="profession" required 
+                                   placeholder="e.g., Marketing Manager, Software Developer, Business Owner"
+                                   class="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-pewaukee-red-500 focus:outline-none transition-colors duration-200">
+                        </div>
+
+                        <!-- Event Selection -->
+                        <div>
+                            <label class="block text-sm font-semibold text-pewaukee-red-700 mb-4">
+                                Select Your Top 3 Preferred Events to Judge *
+                            </label>
+                            <p class="text-sm text-gray-600 mb-6">
+                                Choose the events that best match your expertise and interests. You can select up to 3 events.
+                            </p>
+                            
+                            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3 max-h-96 overflow-y-auto border rounded-lg p-4">
+                                <label class="flex items-center space-x-3 p-3 rounded-lg hover:bg-gray-50 cursor-pointer transition-colors">
+                                    <input type="checkbox" name="events" value="Broadcast Journalism" class="w-4 h-4 rounded">
+                                    <span class="text-sm text-gray-700">Broadcast Journalism</span>
+                                </label>
+                                <label class="flex items-center space-x-3 p-3 rounded-lg hover:bg-gray-50 cursor-pointer transition-colors">
+                                    <input type="checkbox" name="events" value="Career Portfolio" class="w-4 h-4 text-pewaukee-red-700 border-pewaukee-red-300 rounded focus:ring-pewaukee-red-500 focus:ring-2">
+                                    <span class="text-sm text-gray-700">Career Portfolio</span>
+                                </label>
+                                <label class="flex items-center space-x-3 p-3 rounded-lg hover:bg-gray-50 cursor-pointer transition-colors">
+                                    <input type="checkbox" name="events" value="Coding and Programming" class="w-4 h-4 text-pewaukee-red-700 border-pewaukee-red-300 rounded focus:ring-pewaukee-red-500 focus:ring-2">
+                                    <span class="text-sm text-gray-700">Coding and Programming</span>
+                                </label>
+                                <label class="flex items-center space-x-3 p-3 rounded-lg hover:bg-gray-50 cursor-pointer transition-colors">
+                                    <input type="checkbox" name="events" value="Computer Game & Simulation Programming" class="w-4 h-4 text-pewaukee-red-700 border-pewaukee-red-300 rounded focus:ring-pewaukee-red-500 focus:ring-2">
+                                    <span class="text-sm text-gray-700">Computer Game & Simulation Programming</span>
+                                </label>
+                                <label class="flex items-center space-x-3 p-3 rounded-lg hover:bg-gray-50 cursor-pointer transition-colors">
+                                    <input type="checkbox" name="events" value="Data Analysis" class="w-4 h-4 text-pewaukee-red-700 border-pewaukee-red-300 rounded focus:ring-pewaukee-red-500 focus:ring-2">
+                                    <span class="text-sm text-gray-700">Data Analysis</span>
+                                </label>
+                                <label class="flex items-center space-x-3 p-3 rounded-lg hover:bg-gray-50 cursor-pointer transition-colors">
+                                    <input type="checkbox" name="events" value="Digital Animation" class="w-4 h-4 text-pewaukee-red-700 border-pewaukee-red-300 rounded focus:ring-pewaukee-red-500 focus:ring-2">
+                                    <span class="text-sm text-gray-700">Digital Animation</span>
+                                </label>
+                                <label class="flex items-center space-x-3 p-3 rounded-lg hover:bg-gray-50 cursor-pointer transition-colors">
+                                    <input type="checkbox" name="events" value="Digital Video Production" class="w-4 h-4 text-pewaukee-red-700 border-pewaukee-red-300 rounded focus:ring-pewaukee-red-500 focus:ring-2">
+                                    <span class="text-sm text-gray-700">Digital Video Production</span>
+                                </label>
+                                <label class="flex items-center space-x-3 p-3 rounded-lg hover:bg-gray-50 cursor-pointer transition-colors">
+                                    <input type="checkbox" name="events" value="Event Planning" class="w-4 h-4 text-pewaukee-red-700 border-pewaukee-red-300 rounded focus:ring-pewaukee-red-500 focus:ring-2">
+                                    <span class="text-sm text-gray-700">Event Planning</span>
+                                </label>
+                                <label class="flex items-center space-x-3 p-3 rounded-lg hover:bg-gray-50 cursor-pointer transition-colors">
+                                    <input type="checkbox" name="events" value="Financial Planning" class="w-4 h-4 text-pewaukee-red-700 border-pewaukee-red-300 rounded focus:ring-pewaukee-red-500 focus:ring-2">
+                                    <span class="text-sm text-gray-700">Financial Planning</span>
+                                </label>
+                                <label class="flex items-center space-x-3 p-3 rounded-lg hover:bg-gray-50 cursor-pointer transition-colors">
+                                    <input type="checkbox" name="events" value="Financial Statement Analysis" class="w-4 h-4 text-pewaukee-red-700 border-pewaukee-red-300 rounded focus:ring-pewaukee-red-500 focus:ring-2">
+                                    <span class="text-sm text-gray-700">Financial Statement Analysis</span>
+                                </label>
+                                <label class="flex items-center space-x-3 p-3 rounded-lg hover:bg-gray-50 cursor-pointer transition-colors">
+                                    <input type="checkbox" name="events" value="Future Business Educator" class="w-4 h-4 text-pewaukee-red-700 border-pewaukee-red-300 rounded focus:ring-pewaukee-red-500 focus:ring-2">
+                                    <span class="text-sm text-gray-700">Future Business Educator</span>
+                                </label>
+                                <label class="flex items-center space-x-3 p-3 rounded-lg hover:bg-gray-50 cursor-pointer transition-colors">
+                                    <input type="checkbox" name="events" value="Future Business Leader" class="w-4 h-4 text-pewaukee-red-700 border-pewaukee-red-300 rounded focus:ring-pewaukee-red-500 focus:ring-2">
+                                    <span class="text-sm text-gray-700">Future Business Leader</span>
+                                </label>
+                                <label class="flex items-center space-x-3 p-3 rounded-lg hover:bg-gray-50 cursor-pointer transition-colors">
+                                    <input type="checkbox" name="events" value="Graphic Design" class="w-4 h-4 text-pewaukee-red-700 border-pewaukee-red-300 rounded focus:ring-pewaukee-red-500 focus:ring-2">
+                                    <span class="text-sm text-gray-700">Graphic Design</span>
+                                </label>
+                                <label class="flex items-center space-x-3 p-3 rounded-lg hover:bg-gray-50 cursor-pointer transition-colors">
+                                    <input type="checkbox" name="events" value="Impromptu Speaking" class="w-4 h-4 text-pewaukee-red-700 border-pewaukee-red-300 rounded focus:ring-pewaukee-red-500 focus:ring-2">
+                                    <span class="text-sm text-gray-700">Impromptu Speaking</span>
+                                </label>
+                                <label class="flex items-center space-x-3 p-3 rounded-lg hover:bg-gray-50 cursor-pointer transition-colors">
+                                    <input type="checkbox" name="events" value="Intro to Business Presentation" class="w-4 h-4 text-pewaukee-red-700 border-pewaukee-red-300 rounded focus:ring-pewaukee-red-500 focus:ring-2">
+                                    <span class="text-sm text-gray-700">Intro to Business Presentation</span>
+                                </label>
+                                <label class="flex items-center space-x-3 p-3 rounded-lg hover:bg-gray-50 cursor-pointer transition-colors">
+                                    <input type="checkbox" name="events" value="Intro to Programming" class="w-4 h-4 text-pewaukee-red-700 border-pewaukee-red-300 rounded focus:ring-pewaukee-red-500 focus:ring-2">
+                                    <span class="text-sm text-gray-700">Intro to Programming</span>
+                                </label>
+                                <label class="flex items-center space-x-3 p-3 rounded-lg hover:bg-gray-50 cursor-pointer transition-colors">
+                                    <input type="checkbox" name="events" value="Intro to Public Speaking" class="w-4 h-4 text-pewaukee-red-700 border-pewaukee-red-300 rounded focus:ring-pewaukee-red-500 focus:ring-2">
+                                    <span class="text-sm text-gray-700">Intro to Public Speaking</span>
+                                </label>
+                                <label class="flex items-center space-x-3 p-3 rounded-lg hover:bg-gray-50 cursor-pointer transition-colors">
+                                    <input type="checkbox" name="events" value="Intro to Social Media Strategy" class="w-4 h-4 text-pewaukee-red-700 border-pewaukee-red-300 rounded focus:ring-pewaukee-red-500 focus:ring-2">
+                                    <span class="text-sm text-gray-700">Intro to Social Media Strategy</span>
+                                </label>
+                                <label class="flex items-center space-x-3 p-3 rounded-lg hover:bg-gray-50 cursor-pointer transition-colors">
+                                    <input type="checkbox" name="events" value="Job Interview" class="w-4 h-4 text-pewaukee-red-700 border-pewaukee-red-300 rounded focus:ring-pewaukee-red-500 focus:ring-2">
+                                    <span class="text-sm text-gray-700">Job Interview</span>
+                                </label>
+                                <label class="flex items-center space-x-3 p-3 rounded-lg hover:bg-gray-50 cursor-pointer transition-colors">
+                                    <input type="checkbox" name="events" value="Mobile Application Development" class="w-4 h-4 text-pewaukee-red-700 border-pewaukee-red-300 rounded focus:ring-pewaukee-red-500 focus:ring-2">
+                                    <span class="text-sm text-gray-700">Mobile Application Development</span>
+                                </label>
+                                <label class="flex items-center space-x-3 p-3 rounded-lg hover:bg-gray-50 cursor-pointer transition-colors">
+                                    <input type="checkbox" name="events" value="Public Service Announcement" class="w-4 h-4 text-pewaukee-red-700 border-pewaukee-red-300 rounded focus:ring-pewaukee-red-500 focus:ring-2">
+                                    <span class="text-sm text-gray-700">Public Service Announcement</span>
+                                </label>
+                                <label class="flex items-center space-x-3 p-3 rounded-lg hover:bg-gray-50 cursor-pointer transition-colors">
+                                    <input type="checkbox" name="events" value="Public Speaking" class="w-4 h-4 text-pewaukee-red-700 border-pewaukee-red-300 rounded focus:ring-pewaukee-red-500 focus:ring-2">
+                                    <span class="text-sm text-gray-700">Public Speaking</span>
+                                </label>
+                                <label class="flex items-center space-x-3 p-3 rounded-lg hover:bg-gray-50 cursor-pointer transition-colors">
+                                    <input type="checkbox" name="events" value="Sales Presentation" class="w-4 h-4 text-pewaukee-red-700 border-pewaukee-red-300 rounded focus:ring-pewaukee-red-500 focus:ring-2">
+                                    <span class="text-sm text-gray-700">Sales Presentation</span>
+                                </label>
+                                <label class="flex items-center space-x-3 p-3 rounded-lg hover:bg-gray-50 cursor-pointer transition-colors">
+                                    <input type="checkbox" name="events" value="Social Media Strategies" class="w-4 h-4 text-pewaukee-red-700 border-pewaukee-red-300 rounded focus:ring-pewaukee-red-500 focus:ring-2">
+                                    <span class="text-sm text-gray-700">Social Media Strategies</span>
+                                </label>
+                                <label class="flex items-center space-x-3 p-3 rounded-lg hover:bg-gray-50 cursor-pointer transition-colors">
+                                    <input type="checkbox" name="events" value="Supply Chain Management" class="w-4 h-4 text-pewaukee-red-700 border-pewaukee-red-300 rounded focus:ring-pewaukee-red-500 focus:ring-2">
+                                    <span class="text-sm text-gray-700">Supply Chain Management</span>
+                                </label>
+                                <label class="flex items-center space-x-3 p-3 rounded-lg hover:bg-gray-50 cursor-pointer transition-colors">
+                                    <input type="checkbox" name="events" value="Visual Design" class="w-4 h-4 text-pewaukee-red-700 border-pewaukee-red-300 rounded focus:ring-pewaukee-red-500 focus:ring-2">
+                                    <span class="text-sm text-gray-700">Visual Design</span>
+                                </label>
+                                <label class="flex items-center space-x-3 p-3 rounded-lg hover:bg-gray-50 cursor-pointer transition-colors">
+                                    <input type="checkbox" name="events" value="Website Coding & Development" class="w-4 h-4 text-pewaukee-red-700 border-pewaukee-red-300 rounded focus:ring-pewaukee-red-500 focus:ring-2">
+                                    <span class="text-sm text-gray-700">Website Coding & Development</span>
+                                </label>
+                                <label class="flex items-center space-x-3 p-3 rounded-lg hover:bg-gray-50 cursor-pointer transition-colors">
+                                    <input type="checkbox" name="events" value="Website Design" class="w-4 h-4 text-pewaukee-red-700 border-pewaukee-red-300 rounded focus:ring-pewaukee-red-500 focus:ring-2">
+                                    <span class="text-sm text-gray-700">Website Design</span>
+                                </label>
+                            </div>
+                            <p id="selectionCount" class="text-sm text-gray-500 mt-2">0 of 3 events selected</p>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div class="text-center pt-6">
+                            <button type="submit" 
+                                    class="inline-flex items-center justify-center px-8 py-4 bg-pewaukee-red-700 text-white font-semibold rounded-lg hover:bg-pewaukee-red-800 hover:shadow-xl hover:scale-105 transform transition-all duration-300 text-lg">
+                                <i class="bi bi-hand-thumbs-up mr-3"></i>
+                                Submit Volunteer Application
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Volunteer Section -->
+        <section class="py-16 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-pewaukee-red-700 mb-6">Why Volunteer as a Judge?</h2>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-xl p-8 shadow-lg text-center animate-slide-up" style="animation-delay: 0.1s;">
+                        <div class="w-16 h-16 bg-pewaukee-red-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="bi bi-people-fill text-pewaukee-red-700 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-pewaukee-red-700 mb-4">Make an Impact</h3>
+                        <p class="text-gray-600">Help shape the next generation of business leaders by sharing your expertise and professional insights.</p>
+                    </div>
+
+                    <div class="bg-white rounded-xl p-8 shadow-lg text-center animate-slide-up" style="animation-delay: 0.2s;">
+                        <div class="w-16 h-16 bg-pewaukee-red-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="bi bi-people-fill text-pewaukee-red-700 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-pewaukee-red-700 mb-4">Network & Connect</h3>
+                        <p class="text-gray-600">Connect with other professionals and discover the incredible talent in our local student community.</p>
+                    </div>
+
+                    <div class="bg-white rounded-xl p-8 shadow-lg text-center animate-slide-up" style="animation-delay: 0.3s;">
+                        <div class="w-16 h-16 bg-pewaukee-red-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="bi bi-award text-pewaukee-red-700 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-pewaukee-red-700 mb-4">Give Back</h3>
+                        <p class="text-gray-600">Contribute to your community while supporting education and student development in business skills.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 opacity-0 pointer-events-none transition-all duration-300">
+        <div class="bg-white rounded-2xl p-8 max-w-md mx-4 transform scale-95 transition-all duration-300">
+            <div class="text-center">
+                <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="bi bi-check-circle-fill text-green-600 text-3xl"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-pewaukee-red-700 mb-4">Thank You for Volunteering!</h3>
+                <p class="text-gray-600 mb-6">Your application has been submitted successfully. We'll be in touch soon with more details about judging opportunities.</p>
+                <button id="closeModal" class="px-6 py-3 bg-pewaukee-red-700 text-white font-semibold rounded-lg hover:bg-pewaukee-red-800 transition-colors duration-200">
+                    Close
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-pewaukee-black-800 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center space-y-6">
+                <!-- Logo and Title -->
+                <div class="flex justify-center items-center space-x-3">
+                    <img src="https://static.wixstatic.com/media/7c32ee_322121c9ac8c4974a9f78e7ca0e20d13~mv2.png/v1/fit/w_2500,h_1330,al_c/7c32ee_322121c9ac8c4974a9f78e7ca0e20d13~mv2.png" alt="Pewaukee High School Logo" class="h-8 w-8 object-contain">
+                    <div class="text-left">
+                        <h3 class="text-lg font-bold text-white">Pewaukee FBLA</h3>
+                        <p class="text-gray-300 text-xs">Future Business Leaders of America</p>
+                    </div>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="flex flex-col sm:flex-row justify-center items-center space-y-2 sm:space-y-0 sm:space-x-6 text-gray-300 text-sm">
+                    <div class="flex items-center space-x-1">
+                        <i class="bi bi-geo-alt text-pewaukee-red-400"></i>
+                        <span>Pewaukee High School</span>
+                    </div>
+                    <div class="flex items-center space-x-1">
+                        <i class="bi bi-envelope text-pewaukee-red-400"></i>
+                        <span>prelsha@pewaukeeschools.org</span>
+                    </div>
+                    <a href="https://www.instagram.com/pewaukee.fbla/" target="_blank" class="flex items-center space-x-1 hover:text-pewaukee-red-400 transition-colors">
+                        <i class="bi bi-instagram text-pewaukee-red-400"></i>
+                        <span>@pewaukee.fbla</span>
+                    </a>
+                </div>
+                
+                <!-- Credit -->
+                <div class="border-t border-gray-600 pt-4">
+                    <p class="text-gray-400 text-xs">Website created by <span class="text-pewaukee-red-400 font-semibold">Ayham Issa</span> for Pewaukee FBLA Chapter</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Menu Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+            const mobileMenu = document.getElementById('mobileMenu');
+            
+            if (mobileMenuToggle && mobileMenu) {
+                mobileMenuToggle.addEventListener('click', function() {
+                    // Toggle menu visibility
+                    const isHidden = mobileMenu.classList.contains('opacity-0');
+                    
+                    if (isHidden) {
+                        // Show menu
+                        mobileMenu.classList.remove('opacity-0', '-translate-y-2', 'pointer-events-none');
+                        mobileMenu.classList.add('opacity-100', 'translate-y-0', 'pointer-events-auto');
+                    } else {
+                        // Hide menu
+                        mobileMenu.classList.add('opacity-0', '-translate-y-2', 'pointer-events-none');
+                        mobileMenu.classList.remove('opacity-100', 'translate-y-0', 'pointer-events-auto');
+                    }
+                    
+                    // Animate hamburger icon
+                    const spans = mobileMenuToggle.querySelectorAll('span');
+                    const container = mobileMenuToggle.querySelector('div');
+                    
+                    if (isHidden) {
+                        // Menu is opening - transform to X
+                        spans[0].style.transform = 'rotate(45deg) translateY(2px)';
+                        spans[1].style.opacity = '0';
+                        spans[1].style.transform = 'scale(0)';
+                        spans[2].style.transform = 'rotate(-45deg) translateY(-2px)';
+                        container.classList.remove('space-y-1.5');
+                    } else {
+                        // Menu is closing - transform back to hamburger
+                        spans[0].style.transform = 'rotate(0) translateY(0)';
+                        spans[1].style.opacity = '1';
+                        spans[1].style.transform = 'scale(1)';
+                        spans[2].style.transform = 'rotate(0) translateY(0)';
+                        container.classList.add('space-y-1.5');
+                    }
+                });
+                
+                // Function to close menu
+                function closeMenu() {
+                    mobileMenu.classList.add('opacity-0', '-translate-y-2', 'pointer-events-none');
+                    mobileMenu.classList.remove('opacity-100', 'translate-y-0', 'pointer-events-auto');
+                    // Reset hamburger icon
+                    const spans = mobileMenuToggle.querySelectorAll('span');
+                    const container = mobileMenuToggle.querySelector('div');
+                    spans[0].style.transform = 'rotate(0) translateY(0)';
+                    spans[1].style.opacity = '1';
+                    spans[1].style.transform = 'scale(1)';
+                    spans[2].style.transform = 'rotate(0) translateY(0)';
+                    container.classList.add('space-y-1.5');
+                }
+                
+                // Close menu when clicking on a link
+                const mobileLinks = mobileMenu.querySelectorAll('a');
+                mobileLinks.forEach(link => {
+                    link.addEventListener('click', closeMenu);
+                });
+                
+                // Close menu when clicking outside
+                document.addEventListener('click', function(event) {
+                    if (!mobileMenuToggle.contains(event.target) && !mobileMenu.contains(event.target)) {
+                        closeMenu();
+                    }
+                });
+            }
+        });
+
+        // Form Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('volunteerForm');
+            const checkboxes = document.querySelectorAll('input[name="events"]');
+            const selectionCount = document.getElementById('selectionCount');
+            
+            // Update selection count
+            function updateSelectionCount() {
+                const checked = document.querySelectorAll('input[name="events"]:checked');
+                selectionCount.textContent = `${checked.length} of 3 events selected`;
+                
+                if (checked.length > 3) {
+                    selectionCount.classList.add('text-pewaukee-red-600');
+                    selectionCount.classList.remove('text-gray-500');
+                } else {
+                    selectionCount.classList.remove('text-pewaukee-red-600');
+                    selectionCount.classList.add('text-gray-500');
+                }
+            }
+            
+            // Limit checkbox selection to 3
+            checkboxes.forEach(checkbox => {
+                checkbox.addEventListener('change', function() {
+                    const checked = document.querySelectorAll('input[name="events"]:checked');
+                    
+                    if (checked.length > 3) {
+                        this.checked = false;
+                        alert('Please select only 3 events maximum.');
+                    }
+                    
+                    updateSelectionCount();
+                });
+            });
+            
+            // Form submission
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const profession = document.getElementById('profession').value;
+                const selectedEvents = Array.from(document.querySelectorAll('input[name="events"]:checked')).map(cb => cb.value);
+                
+                if (selectedEvents.length === 0) {
+                    alert('Please select at least one event to judge.');
+                    return;
+                }
+                
+                if (selectedEvents.length > 3) {
+                    alert('Please select no more than 3 events.');
+                    return;
+                }
+                
+                // Show loading state
+                const submitBtn = form.querySelector('button[type="submit"]');
+                const originalText = submitBtn.innerHTML;
+                submitBtn.innerHTML = '<i class="bi bi-hourglass-split mr-3"></i>Submitting...';
+                submitBtn.disabled = true;
+                
+                // Debug: Log the events data
+                console.log('Selected events:', selectedEvents);
+                console.log('Events JSON:', JSON.stringify(selectedEvents));
+                
+                // Create URL-encoded form data (better for Google Apps Script)
+                const formData = new URLSearchParams();
+                formData.append('name', name);
+                formData.append('email', email);
+                formData.append('profession', profession);
+                
+                // Send events as a JSON string for proper array formatting
+                formData.append('eventsJson', JSON.stringify(selectedEvents));
+                
+                // Debug: Log what we're sending
+                console.log('Form data being sent:', Object.fromEntries(formData));
+                
+                // Submit to Google Apps Script
+                fetch('https://script.google.com/macros/s/AKfycbyPjVC45d3Pw0F2_L8OJ_0S2HFUa9G6oI_ZIbOpPKm--PIRMOTJs-V0U6ifrIa-VO1b/exec', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded',
+                    },
+                    body: formData
+                })
+                .then(response => response.json())
+                .then(data => {
+                    // Debug: Log the server response
+                    console.log('Server response:', data);
+                    
+                    if (data.status === 'success') {
+                        // Debug: Log the debug info if available
+                        if (data.debug) {
+                            console.log('Debug info from server:', data.debug);
+                        }
+                        
+                        // Trigger confetti
+                        confetti({
+                            particleCount: 100,
+                            spread: 70,
+                            origin: { y: 0.6 },
+                            colors: ['#b91c1c', '#dc2626', '#ef4444', '#f87171', '#fca5a5']
+                        });
+                        
+                        // Show success modal
+                        showSuccessModal();
+                        
+                        // Reset form
+                        form.reset();
+                        updateSelectionCount();
+                    } else {
+                        alert('There was an error submitting your application. Please try again.');
+                        console.error('Server response:', data);
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('There was an error submitting your application. Please try again.');
+                })
+                .finally(() => {
+                    // Reset button
+                    submitBtn.innerHTML = originalText;
+                    submitBtn.disabled = false;
+                });
+            });
+            
+            // Success modal functions
+            function showSuccessModal() {
+                const modal = document.getElementById('successModal');
+                modal.classList.remove('opacity-0', 'pointer-events-none');
+                modal.classList.add('opacity-100', 'pointer-events-auto');
+                modal.querySelector('.bg-white').classList.remove('scale-95');
+                modal.querySelector('.bg-white').classList.add('scale-100');
+            }
+            
+            function hideSuccessModal() {
+                const modal = document.getElementById('successModal');
+                modal.classList.add('opacity-0', 'pointer-events-none');
+                modal.classList.remove('opacity-100', 'pointer-events-auto');
+                modal.querySelector('.bg-white').classList.add('scale-95');
+                modal.querySelector('.bg-white').classList.remove('scale-100');
+            }
+            
+            // Close modal event listener
+            document.getElementById('closeModal').addEventListener('click', hideSuccessModal);
+            
+            // Close modal when clicking outside
+            document.getElementById('successModal').addEventListener('click', function(e) {
+                if (e.target === this) {
+                    hideSuccessModal();
+                }
+            });
+            
+            // Success modal functions
+            function showSuccessModal() {
+                const modal = document.getElementById('successModal');
+                modal.classList.remove('opacity-0', 'pointer-events-none');
+                modal.classList.add('opacity-100', 'pointer-events-auto');
+                modal.querySelector('.bg-white').classList.remove('scale-95');
+                modal.querySelector('.bg-white').classList.add('scale-100');
+            }
+            
+            function hideSuccessModal() {
+                const modal = document.getElementById('successModal');
+                modal.classList.add('opacity-0', 'pointer-events-none');
+                modal.classList.remove('opacity-100', 'pointer-events-auto');
+                modal.querySelector('.bg-white').classList.add('scale-95');
+                modal.querySelector('.bg-white').classList.remove('scale-100');
+            }
+            
+            // Close modal event listener
+            document.getElementById('closeModal').addEventListener('click', hideSuccessModal);
+            
+            // Close modal when clicking outside
+            document.getElementById('successModal').addEventListener('click', function(e) {
+                if (e.target === this) {
+                    hideSuccessModal();
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about Pewaukee High School FBLA Chapter - our mission, history, and dedicated advisors who guide future business leaders.">
+    <meta name="keywords" content="Pewaukee FBLA About, FBLA Advisors, Shawn Prell, John Blechacz, Pewaukee High School, business education">
+    <title>About Us - Pewaukee High School FBLA</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://static.wixstatic.com/media/7c32ee_322121c9ac8c4974a9f78e7ca0e20d13~mv2.png/v1/fit/w_2500,h_1330,al_c/7c32ee_322121c9ac8c4974a9f78e7ca0e20d13~mv2.png">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'pewaukee-red': {
+                            50: '#fef2f2',
+                            100: '#fee2e2',
+                            200: '#fecaca',
+                            300: '#fca5a5',
+                            400: '#f87171',
+                            500: '#ef4444',
+                            600: '#dc2626',
+                            700: '#b91c1c',
+                            800: '#991b1b',
+                            900: '#7f1d1d'
+                        },
+                        'pewaukee-black': {
+                            50: '#f8f8f8',
+                            100: '#e5e5e5',
+                            200: '#cccccc',
+                            300: '#999999',
+                            400: '#666666',
+                            500: '#333333',
+                            600: '#1a1a1a',
+                            700: '#0d0d0d',
+                            800: '#050505',
+                            900: '#000000'
+                        }
+                    },
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif']
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.8s ease-out',
+                        'slide-up': 'slideUp 0.8s ease-out',
+                        'slide-in-left': 'slideInLeft 0.8s ease-out',
+                        'slide-in-right': 'slideInRight 0.8s ease-out',
+                        'bounce-in': 'bounceIn 0.6s ease-out',
+                        'pulse-slow': 'pulse 3s infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'glow': 'glow 2s ease-in-out infinite alternate',
+                        'spin-slow': 'spin 3s linear infinite',
+                        'scale-pulse': 'scalePulse 2s ease-in-out infinite',
+                        'fade-out': 'fadeOut 0.8s ease-out',
+                        'logo-bounce': 'logoBounce 1.5s ease-out',
+                        'loading-dots': 'loadingDots 1.5s infinite'
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' }
+                        },
+                        slideUp: {
+                            '0%': { opacity: '0', transform: 'translateY(30px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' }
+                        },
+                        slideInLeft: {
+                            '0%': { opacity: '0', transform: 'translateX(-30px)' },
+                            '100%': { opacity: '1', transform: 'translateX(0)' }
+                        },
+                        slideInRight: {
+                            '0%': { opacity: '0', transform: 'translateX(30px)' },
+                            '100%': { opacity: '1', transform: 'translateX(0)' }
+                        },
+                        bounceIn: {
+                            '0%': { opacity: '0', transform: 'scale(0.3)' },
+                            '50%': { transform: 'scale(1.05)' },
+                            '70%': { transform: 'scale(0.9)' },
+                            '100%': { opacity: '1', transform: 'scale(1)' }
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-10px)' }
+                        },
+                        glow: {
+                            'from': { 'box-shadow': '0 0 20px rgba(185, 28, 28, 0.5)' },
+                            'to': { 'box-shadow': '0 0 30px rgba(185, 28, 28, 0.8), 0 0 40px rgba(185, 28, 28, 0.6)' }
+                        },
+                        scalePulse: {
+                            '0%, 100%': { transform: 'scale(1)' },
+                            '50%': { transform: 'scale(1.1)' }
+                        },
+                        fadeOut: {
+                            '0%': { opacity: '1' },
+                            '100%': { opacity: '0', visibility: 'hidden' }
+                        },
+                        logoBounce: {
+                            '0%': { transform: 'scale(0) rotate(0deg)' },
+                            '50%': { transform: 'scale(1.2) rotate(180deg)' },
+                            '100%': { transform: 'scale(1) rotate(360deg)' }
+                        },
+                        loadingDots: {
+                            '0%, 20%': { transform: 'scale(1)' },
+                            '50%': { transform: 'scale(1.5)' },
+                            '80%, 100%': { transform: 'scale(1)' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body class="min-h-screen flex flex-col">
+    <!-- Header -->
+    <header class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="flex justify-between items-center py-3 md:py-4">
+                <div class="flex items-center space-x-3 md:space-x-4">
+                    <img src="https://static.wixstatic.com/media/7c32ee_322121c9ac8c4974a9f78e7ca0e20d13~mv2.png/v1/fit/w_2500,h_1330,al_c/7c32ee_322121c9ac8c4974a9f78e7ca0e20d13~mv2.png" alt="Pewaukee High School Logo" class="h-10 w-10 md:h-12 md:w-12 object-contain flex-shrink-0">
+                    <div class="min-w-0">
+                        <h1 class="text-lg md:text-xl font-bold text-pewaukee-red-700 truncate">Pewaukee FBLA</h1>
+                        <span class="text-xs md:text-sm text-gray-600 hidden sm:block">Future Business Leaders of America</span>
+                    </div>
+                </div>
+                
+                <nav class="hidden md:flex space-x-8" id="navigation">
+                    <a href="index.html" class="text-pewaukee-black-700 hover:text-pewaukee-red-600 px-3 py-2 rounded-md font-semibold transition-all duration-300 flex items-center hover:shadow-md hover:scale-105 transform hover:bg-gray-50">
+                        <i class="bi bi-house mr-2 transition-transform duration-300 hover:rotate-12"></i>Home
+                    </a>
+                    <a href="about.html" class="text-pewaukee-red-700 bg-gray-100 hover:text-pewaukee-black-800 px-3 py-2 rounded-md font-semibold transition-all duration-300 flex items-center hover:shadow-md hover:scale-105 transform">
+                        <i class="bi bi-people mr-2 transition-transform duration-300 hover:rotate-12"></i>About Us
+                    </a>
+                    <a href="rlc.html" class="text-pewaukee-black-700 hover:text-pewaukee-red-600 px-3 py-2 rounded-md font-semibold transition-all duration-300 flex items-center hover:shadow-md hover:scale-105 transform hover:bg-gray-50">
+                        <i class="bi bi-calendar-event mr-2 transition-transform duration-300 hover:rotate-12"></i>RLC Conference
+                    </a>
+                    <a href="volunteer.html" class="text-pewaukee-black-700 hover:text-pewaukee-red-600 px-3 py-2 rounded-md font-semibold transition-all duration-300 flex items-center hover:shadow-md hover:scale-105 transform hover:bg-gray-50">
+                        <i class="bi bi-hand-thumbs-up mr-2 transition-transform duration-300 hover:rotate-12"></i>Volunteer
+                    </a>
+                    <a href="contact.html" class="text-pewaukee-black-700 hover:text-pewaukee-red-600 px-3 py-2 rounded-md font-semibold transition-all duration-300 flex items-center hover:shadow-md hover:scale-105 transform hover:bg-gray-50">
+                        <i class="bi bi-envelope mr-2 transition-transform duration-300 hover:rotate-12"></i>Contact
+                    </a>
+                </nav>
+                
+                <button class="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-pewaukee-red-500 focus:ring-opacity-50" id="mobileMenuToggle">
+                    <div class="w-6 h-6 flex flex-col justify-center space-y-1.5">
+                        <span class="block w-full h-0.5 bg-pewaukee-red-700 transition-all duration-300 ease-in-out transform origin-center"></span>
+                        <span class="block w-full h-0.5 bg-pewaukee-red-700 transition-all duration-300 ease-in-out"></span>
+                        <span class="block w-full h-0.5 bg-pewaukee-red-700 transition-all duration-300 ease-in-out transform origin-center"></span>
+                    </div>
+                </button>
+            </div>
+            
+            <!-- Mobile menu -->
+            <div class="md:hidden absolute left-0 right-0 top-full bg-white shadow-lg border-t transform transition-all duration-300 ease-in-out opacity-0 -translate-y-2 pointer-events-none" id="mobileMenu">
+                <div class="px-4 py-3 space-y-1 max-h-screen overflow-y-auto">
+                    <a href="index.html" class="block text-pewaukee-black-700 hover:text-pewaukee-red-600 hover:bg-gray-50 px-4 py-3 rounded-lg font-semibold flex items-center transition-all duration-200">
+                        <i class="bi bi-house mr-3 text-lg"></i>Home
+                    </a>
+                    <a href="about.html" class="block text-pewaukee-red-700 bg-pewaukee-red-50 px-4 py-3 rounded-lg font-semibold flex items-center transition-all duration-200 shadow-sm">
+                        <i class="bi bi-people mr-3 text-lg"></i>About Us
+                    </a>
+                    <a href="rlc.html" class="block text-pewaukee-black-700 hover:text-pewaukee-red-600 hover:bg-gray-50 px-4 py-3 rounded-lg font-semibold flex items-center transition-all duration-200">
+                        <i class="bi bi-calendar-event mr-3 text-lg"></i>RLC Conference
+                    </a>
+                    <a href="volunteer.html" class="block text-pewaukee-black-700 hover:text-pewaukee-red-600 hover:bg-gray-50 px-4 py-3 rounded-lg font-semibold flex items-center transition-all duration-200">
+                        <i class="bi bi-hand-thumbs-up mr-3 text-lg"></i>Volunteer
+                    </a>
+                    <a href="contact.html" class="block text-pewaukee-black-700 hover:text-pewaukee-red-600 hover:bg-gray-50 px-4 py-3 rounded-lg font-semibold flex items-center transition-all duration-200">
+                        <i class="bi bi-envelope mr-3 text-lg"></i>Contact
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow">
+        <!-- Hero Section -->
+        <section class="relative bg-gradient-to-br from-pewaukee-red-700 to-pewaukee-red-600 text-white py-16 sm:py-20 lg:py-24">
+            <div class="absolute inset-0 bg-black opacity-10"></div>
+            <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-4xl mx-auto">
+                    <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 animate-fade-in leading-tight">About Our Chapter</h1>
+                    <p class="text-xl sm:text-2xl mb-8 opacity-90 leading-relaxed animate-slide-up" style="animation-delay: 0.3s;">
+                        Learn about the passionate educators and dedicated mission that drive Pewaukee FBLA to excellence.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission Section -->
+        <section class="py-16 sm:py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-pewaukee-red-700 mb-6 animate-fade-in">Our Mission</h2>
+                    <p class="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed animate-slide-up">
+                        To inspire and prepare students to become leaders in business and entrepreneurship through competitive events, 
+                        community service, and professional development opportunities that build confidence and real-world skills.
+                    </p>
+                </div>
+
+                <!-- Mission Cards -->
+                <div class="grid md:grid-cols-3 gap-8 mb-16">
+                    <div class="bg-white rounded-xl p-8 shadow-lg border-l-4 border-pewaukee-red-500 animate-slide-up" style="animation-delay: 0.1s;">
+                        <div class="w-12 h-12 bg-pewaukee-red-100 rounded-lg flex items-center justify-center mb-4">
+                            <i class="bi bi-trophy text-pewaukee-red-700 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-pewaukee-red-700 mb-3">Excellence</h3>
+                        <p class="text-gray-600">We strive for excellence in competitive events and academic achievements.</p>
+                    </div>
+
+                    <div class="bg-white rounded-xl p-8 shadow-lg border-l-4 border-pewaukee-red-500 animate-slide-up" style="animation-delay: 0.2s;">
+                        <div class="w-12 h-12 bg-pewaukee-red-100 rounded-lg flex items-center justify-center mb-4">
+                            <i class="bi bi-people text-pewaukee-red-700 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-pewaukee-red-700 mb-3">Leadership</h3>
+                        <p class="text-gray-600">Developing strong leaders who make positive impacts in their communities.</p>
+                    </div>
+
+                    <div class="bg-white rounded-xl p-8 shadow-lg border-l-4 border-pewaukee-red-500 animate-slide-up" style="animation-delay: 0.3s;">
+                        <div class="w-12 h-12 bg-pewaukee-red-100 rounded-lg flex items-center justify-center mb-4">
+                            <i class="bi bi-heart text-pewaukee-red-700 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-pewaukee-red-700 mb-3">Service</h3>
+                        <p class="text-gray-600">Giving back to our community through meaningful service projects.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Advisors Section -->
+        <section class="py-16 sm:py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-pewaukee-red-700 mb-6 animate-fade-in">Our Dedicated Advisors</h2>
+                    <p class="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed animate-slide-up">
+                        Meet the passionate educators who guide and support our chapter members on their journey to becoming future business leaders.
+                    </p>
+                </div>
+
+                <div class="grid lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
+                    <!-- Advisor 1: Shawn Prell -->
+                    <div class="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 animate-slide-up" style="animation-delay: 0.1s;">
+                        <div class="text-center">
+                            <div class="relative inline-block mb-6">
+                                <img src="https://files.elfsightcdn.com/eafe4a4d-3436-495d-b748-5bdce62d911d/13d63d3f-ee66-47b1-9a97-29c1b2ebe36b/Prell-Shawn.jpg" 
+                                     alt="Shawn Prell" 
+                                     class="w-32 h-32 rounded-full object-cover mx-auto shadow-lg border-4 border-pewaukee-red-100">
+                                <div class="absolute -bottom-2 -right-2 w-8 h-8 bg-pewaukee-red-600 rounded-full flex items-center justify-center">
+                                    <i class="bi bi-star-fill text-white text-sm"></i>
+                                </div>
+                            </div>
+                            <h3 class="text-2xl font-bold text-pewaukee-red-700 mb-2">Shawn Prell</h3>
+                            <p class="text-lg text-pewaukee-red-600 font-semibold mb-2">Business Education Teacher</p>
+                            <div class="bg-pewaukee-red-50 rounded-lg px-4 py-2 mb-4 inline-block">
+                                <span class="text-pewaukee-red-700 font-semibold">15 Year Advisor</span>
+                            </div>
+                            <div class="space-y-2 text-gray-600">
+                                <div class="flex items-center justify-center">
+                                    <i class="bi bi-envelope text-pewaukee-red-500 mr-2"></i>
+                                    <a href="mailto:prelsha@pewaukeeschools.org" class="hover:text-pewaukee-red-600 transition-colors">
+                                        prelsha@pewaukeeschools.org
+                                    </a>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 mt-4 leading-relaxed">
+                                With 15 years of dedicated service to our FBLA chapter, Mr. Prell brings extensive experience in business education and student leadership development.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Advisor 2: John Blechacz -->
+                    <div class="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 animate-slide-up" style="animation-delay: 0.2s;">
+                        <div class="text-center">
+                            <div class="relative inline-block mb-6">
+                                <img src="https://files.elfsightcdn.com/eafe4a4d-3436-495d-b748-5bdce62d911d/9fc12639-2ff5-42f3-9390-1dc4a5bb0f4c/John-Blechacz.jpg" 
+                                     alt="John Blechacz" 
+                                     class="w-32 h-32 rounded-full object-cover mx-auto shadow-lg border-4 border-pewaukee-red-100">
+                                <div class="absolute -bottom-2 -right-2 w-8 h-8 bg-pewaukee-red-600 rounded-full flex items-center justify-center">
+                                    <i class="bi bi-star-fill text-white text-sm"></i>
+                                </div>
+                            </div>
+                            <h3 class="text-2xl font-bold text-pewaukee-red-700 mb-2">John Blechacz</h3>
+                            <p class="text-lg text-pewaukee-red-600 font-semibold mb-4">Business Education Teacher</p>
+                            <div class="space-y-2 text-gray-600">
+                                <div class="flex items-center justify-center">
+                                    <i class="bi bi-envelope text-pewaukee-red-500 mr-2"></i>
+                                    <a href="mailto:blecjoh@pewaukeeschools.org" class="hover:text-pewaukee-red-600 transition-colors">
+                                        blecjoh@pewaukeeschools.org
+                                    </a>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 mt-4 leading-relaxed">
+                                Mr. Blechacz brings passion and expertise to our FBLA program, helping students develop essential business skills and leadership capabilities.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-pewaukee-black-800 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center space-y-6">
+                <!-- Logo and Title -->
+                <div class="flex justify-center items-center space-x-3">
+                    <img src="https://static.wixstatic.com/media/7c32ee_322121c9ac8c4974a9f78e7ca0e20d13~mv2.png/v1/fit/w_2500,h_1330,al_c/7c32ee_322121c9ac8c4974a9f78e7ca0e20d13~mv2.png" alt="Pewaukee High School Logo" class="h-8 w-8 object-contain">
+                    <div class="text-left">
+                        <h3 class="text-lg font-bold text-white">Pewaukee FBLA</h3>
+                        <p class="text-gray-300 text-xs">Future Business Leaders of America</p>
+                    </div>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="flex flex-col sm:flex-row justify-center items-center space-y-2 sm:space-y-0 sm:space-x-6 text-gray-300 text-sm">
+                    <div class="flex items-center space-x-1">
+                        <i class="bi bi-geo-alt text-pewaukee-red-400"></i>
+                        <span>Pewaukee High School</span>
+                    </div>
+                    <div class="flex items-center space-x-1">
+                        <i class="bi bi-envelope text-pewaukee-red-400"></i>
+                        <span>prelsha@pewaukeeschools.org</span>
+                    </div>
+                    <a href="https://www.instagram.com/pewaukee.fbla/" target="_blank" class="flex items-center space-x-1 hover:text-pewaukee-red-400 transition-colors">
+                        <i class="bi bi-instagram text-pewaukee-red-400"></i>
+                        <span>@pewaukee.fbla</span>
+                    </a>
+                </div>
+                
+                <!-- Credit -->
+                <div class="border-t border-gray-600 pt-4">
+                    <p class="text-gray-400 text-xs">Website created by <span class="text-pewaukee-red-400 font-semibold">Ayham Issa</span> for Pewaukee FBLA Chapter</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Menu Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+            const mobileMenu = document.getElementById('mobileMenu');
+            
+            if (mobileMenuToggle && mobileMenu) {
+                mobileMenuToggle.addEventListener('click', function() {
+                    // Toggle menu visibility
+                    const isHidden = mobileMenu.classList.contains('opacity-0');
+                    
+                    if (isHidden) {
+                        // Show menu
+                        mobileMenu.classList.remove('opacity-0', '-translate-y-2', 'pointer-events-none');
+                        mobileMenu.classList.add('opacity-100', 'translate-y-0', 'pointer-events-auto');
+                    } else {
+                        // Hide menu
+                        mobileMenu.classList.add('opacity-0', '-translate-y-2', 'pointer-events-none');
+                        mobileMenu.classList.remove('opacity-100', 'translate-y-0', 'pointer-events-auto');
+                    }
+                    
+                    // Animate hamburger icon
+                    const spans = mobileMenuToggle.querySelectorAll('span');
+                    const container = mobileMenuToggle.querySelector('div');
+                    
+                    if (isHidden) {
+                        // Menu is opening - transform to X
+                        spans[0].style.transform = 'rotate(45deg) translateY(2px)';
+                        spans[1].style.opacity = '0';
+                        spans[1].style.transform = 'scale(0)';
+                        spans[2].style.transform = 'rotate(-45deg) translateY(-2px)';
+                        container.classList.remove('space-y-1.5');
+                    } else {
+                        // Menu is closing - transform back to hamburger
+                        spans[0].style.transform = 'rotate(0) translateY(0)';
+                        spans[1].style.opacity = '1';
+                        spans[1].style.transform = 'scale(1)';
+                        spans[2].style.transform = 'rotate(0) translateY(0)';
+                        container.classList.add('space-y-1.5');
+                    }
+                });
+                
+                // Function to close menu
+                function closeMenu() {
+                    mobileMenu.classList.add('opacity-0', '-translate-y-2', 'pointer-events-none');
+                    mobileMenu.classList.remove('opacity-100', 'translate-y-0', 'pointer-events-auto');
+                    // Reset hamburger icon
+                    const spans = mobileMenuToggle.querySelectorAll('span');
+                    const container = mobileMenuToggle.querySelector('div');
+                    spans[0].style.transform = 'rotate(0) translateY(0)';
+                    spans[1].style.opacity = '1';
+                    spans[1].style.transform = 'scale(1)';
+                    spans[2].style.transform = 'rotate(0) translateY(0)';
+                    container.classList.add('space-y-1.5');
+                }
+                
+                // Close menu when clicking on a link
+                const mobileLinks = mobileMenu.querySelectorAll('a');
+                mobileLinks.forEach(link => {
+                    link.addEventListener('click', closeMenu);
+                });
+                
+                // Close menu when clicking outside
+                document.addEventListener('click', function(event) {
+                    if (!mobileMenuToggle.contains(event.target) && !mobileMenu.contains(event.target)) {
+                        closeMenu();
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
